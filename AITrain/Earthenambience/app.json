@@ -1,0 +1,70 @@
+{
+  "id": "65311a43804d1d6d7915cf49",
+  "createdAt": 1697716803,
+  "createdBy": "2",
+  "updatedAt": 1729687879,
+  "updatedBy": "17",
+  "name": "earthenambience",
+  "message": "Creating app Earthen Ambience",
+  "clientCode": "FIN",
+  "appCode": "earthenambience",
+  "version": 100,
+  "properties": {
+    "fontPacks": {
+      "1F4MKwBRWn9jRiBiANKnRu": {
+        "code": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap\" rel=\"stylesheet\">",
+        "name": "Sarabun"
+      }
+    },
+    "csp": {
+      "defaultSrc": "'self' 'unsafe-inline' 'unsafe-eval' https://*.openbracket.ai https://www.google-analytics.com/ https://api-dcrm.fincity.com https://www.google.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://analytics.google.com https://www.google.co.in https://www.facebook.com https://*.doubleclick.net https://connect.facebook.net https://openbracket.ai https://fonts.googleapis.com https://cdnjs.cloudflare.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://maps.googleapis.com https://cdn.taboola.com blob: https://static.ads-twitter.com/uwt.js https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js https://maps.gstatic.com https://clarity.ms https://www.*.clarity.ms https://www.clarity.ms https://*.clarity.ms https://*.taboola.com https://taboola.com https://*.twitter.com https://twitter.com http://*.pingdom.net ttps://t.co https://t.co https://www.gstatic.com http://*.taboola.com http://www.gstatic.com https://www.googleadservices.com"
+    },
+    "defaultPage": "home",
+    "iconPacks": {
+      "70ghDZ2WMDglf9lwuuyrm6": {
+        "name": "MATERIAL_ICONS_FILLED"
+      },
+      "apmr748BTHfV2Dy17G5hG": {
+        "name": "FREE_FONT_AWESOME_ALL"
+      }
+    },
+    "codeParts": {
+      "4LtibB9aCRRGOTqK02kZJb": {
+        "part": "<meta name='description' content='Experience the magic of green. Contact Your haven amidst nature Experience the enchantment of lush greenery, where nature’s magic comes to life. &nbsp; Earthen Ambience…Coming soon! Register Now For Prelaunch Offers Project RERA number PRM/KA/RERA/1251/308/PR/210323/005811 Contact ea@evanthasridurga.com © 2023 Evantha Sridurga| All Rights reserved 7026 75 76 76 Sarjapur, Bangalore'><meta property='og:locale' content='en_US'><meta property='og:type' content='article'><meta property='og:title' content='Earthen Ambience - Evantha'><meta property='og:description' content='Experience the magic of green. Contact Your haven amidst nature Experience the enchantment of lush greenery, where nature’s magic comes to life. &nbsp; Earthen Ambience…Coming soon! Register Now For Prelaunch Offers Project RERA number PRM/KA/RERA/1251/308/PR/210323/005811 Contact ea@evanthasridurga.com © 2023 Evantha Sridurga| All Rights reserved 7026 75 76 76 Sarjapur, Bangalore'><meta property='og:url' content='https://evanthasridurga.com/earthen-ambience/'><meta property='og:site_name' content='Evantha'><meta property='og:image' content='https://evanthasridurga.com/wp-content/uploads/2023/04/Rectangle-5416-1.png'><meta property='article:modified_time' content='2022-07-27T10:05:16+00:00'><meta property='og:image:width' content='686'><meta property='og:image:height' content='800'><meta property='og:image:type' content='image/png'><meta name='twitter:card' content='summary_large_image'><meta name='twitter:label1' content='Est. reading time'><meta name='twitter:data1' content='3 minutes'><meta name='msapplication-TileImage' content='https://evanthasridurga.com/wp-content/uploads/2022/09/Group-2.png'>",
+        "place": "AFTER_HEAD",
+        "order": 1
+      },
+      "6FlSayxKuCGg4ppgC2Mn5X": {
+        "part": "<noscript><iframesrc='https://www.googletagmanager.com/ns.html?id=GTM-PX6BB8LG'height='0'width='0'style='display: none; visibility: hidden'></iframe></noscript>\n",
+        "place": "AFTER_BODY",
+        "order": 1
+      },
+      "414YcQMw12rOlFllf2IJ8s": {
+        "part": "<script src=\"//rum-static.pingdom.net/pa-653e2cee68cac400120002e4.js\" async></script>",
+        "place": "BEFORE_BODY",
+        "order": 1
+      },
+      "O1jVgNyUMgossBuq88yTB": {
+        "part": "<script async src='https://www.googletagmanager.com/gtag/js?id=AW-11233796004'></script><script>window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-11233796004');</script><script>function gtag_report_conversion(url) {var callback = function () {if (typeof url != 'undefined') {window.location = url;}};gtag('event', 'conversion', {send_to: 'AW-11233796004/ijFKCJ7P4rQYEKS_2Owp',event_callback: callback,});return false;}</script><script>(function (w, d, s, l, i) {w[l] = w[l] || [];w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });var f = d.getElementsByTagName(s)[0],j = d.createElement(s),dl = l != 'dataLayer' ? '&l=' + l : '';j.async = true;j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', 'GTM-PX6BB8LG');</script>\n<script\n  async\n  src=\"https://www.googletagmanager.com/gtag/js?id=AW-10852030635\"\n></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(arguments) {\n    dataLayer.push(arguments);\n  }\n  gtag(\"js\", new Date());\n \n  gtag(\"config\", \"AW-10852030635\");\n</script>\n \n<script type=\"text/javascript\">\n  (function (c, l, a, r, i, t, y) {\n    c[a] =\n      c[a] ||\n      function () {\n        (c[a].q = c[a].q || []).push(arguments);\n      };\n    t = l.createElement(r);\n    t.async = 1;\n    t.src = \"https://www.clarity.ms/tag/\" + i;\n    y = l.getElementsByTagName(r)[0];\n    y.parentNode.insertBefore(t, y);\n  })(window, document, \"clarity\", \"script\", \"gh6uuajbpi\");\n</script>\n<script>\n\tfunction gtag_report_conversion(url) {\n\t  var callback = function () {\n\t    if (typeof url != \"undefined\") {\n\t      window.location = url;\n\t    }\n\t  };\n\t  gtag(\"event\", \"conversion\", {\n\t    send_to: \"AW-10852030635/wbYlCPr72JQYEKux07Yo\",\n\t    event_callback: callback,\n\t  });\n\t  return false;\n\t}\n</script>\n<script type='text/javascript'>\n  window._tfa = window._tfa || [];\n  window._tfa.push({notify: 'event', name: 'page_view', id: 1631855});\n  !function (t, f, a, x) {\n         if (!document.getElementById(x)) {\n            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);\n         }\n  }(document.createElement('script'),\n  document.getElementsByTagName('script')[0],\n  '//cdn.taboola.com/libtrc/unip/1631855/tfa.js',\n  'tb_tfa_script');\n</script>\n<script type=\"text/javascript\">\n    (function(c,l,a,r,i,t,y){\n        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n        t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n    })(window, document, \"clarity\", \"script\", \"on49fsk9an\");\n</script>",
+        "place": "BEFORE_HEAD",
+        "order": 1
+      }
+    },
+    "manifest": {
+      "start_url": "",
+      "description": ""
+    },
+    "description": "Visit our Earthen Ambience Official Website to get to know about our project. Call 95136-83855 to know more.",
+    "links": {
+      "undefined": {
+        "rel": "icon",
+        "href": "api/files/static/file/FIN/ed.png",
+        "type": "png"
+      }
+    },
+    "title": "Earthen Ambience Official Website - Evantha Developers",
+    "cspReport": {
+      "defaultSrc": "'self' 'unsafe-inline' 'unsafe-eval' https://*.openbracket.ai https://www.google-analytics.com/ https://api-dcrm.fincity.com https://www.google.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://analytics.google.com https://www.google.co.in https://www.facebook.com https://*.doubleclick.net https://connect.facebook.net https://openbracket.ai https://fonts.googleapis.com https://cdnjs.cloudflare.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://maps.googleapis.com https://cdn.taboola.com blob: https://static.ads-twitter.com/uwt.js https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js https://maps.gstatic.com https://clarity.ms https://www.*.clarity.ms https://www.clarity.ms https://*.clarity.ms https://*.taboola.com https://taboola.com https://*.twitter.com https://twitter.com http://*.pingdom.net ttps://t.co https://t.co https://www.gstatic.com http://*.taboola.com http://www.gstatic.com https://www.googleadservices.com"
+    }
+  }
+}

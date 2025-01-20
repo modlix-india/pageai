@@ -1,0 +1,44 @@
+    2. ArrayRepeater is a component to repeat one child component multiple times. It is like a for loop in programming languages.
+
+        It can have only one child component.
+
+        It has the following binding paths.
+            
+            1. bindingPath - Array Repeater Binding Path of an array or an object. The array is repeated based on the length of the array or the number properties in an object. The array or object can be a store path or a static data using the default data property. If it is a store path, the value of the store path should be an array or an object. Since you can do operations on this array like re-organize, filter, delete, etc., it requires a binding path rather than a property. When an object is used, moving the children is not possible.
+
+            2. bindingPath2 - When some data is dropped on the repeater, the data is stored in this path. If a dropDataPrefix is specified it is removed and then converted to the data type specified in dropDataType.
+
+        It has no pseudo states.
+
+        It has the following sub-components.
+            1. repeaterProperties - It is just named as "repeaterProperties" but it is actually the child component which is the container for all the controls and the child component that needs repetition.
+            2. repeatedComp - It is the container of the component of each child component.
+            3. iconGrid - It is the container of the icons like add, remove, move.
+            4. add - Add button to add a new repeated component.
+            5. remove - Remove button to remove a repeated component.
+            6. move - Move button to move a repeated component.
+
+        It has the following properties.
+
+            1. showAdd - When this option is set to true, User will be able to add items to repeater. Default value is false.
+            2. showDelete - When this option is set to true, User will be able to delete items from repeater. Default value is false.
+            3. showMove - When this option is set to true, User will be able to move items up/down the index in the repeater. Default value is false.
+            4. addIcon - Icon to be shown in the add button. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-plus" gives a plus icon.
+            5. deleteIcon - Icon to be shown in the delete button. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-trash" gives a trash icon.
+            6. moveUpIcon - Icon to be shown in the move up button. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-arrow-up" gives an up arrow icon.
+            7. moveDownIcon - Icon to be shown in the move down button. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-arrow-down" gives a down arrow icon.
+            8. isItemDraggable - When this option is set to true, User will be able to drag items up the index in the repeater. It will change the bound array to change the values order and creates a new array every time. Default value is false.
+            9. addEvent - Event to be triggered when clicked on add button.
+            10. removeEvent - Event to be triggered when clicked on remove button.
+            11. moveEvent - Event to be triggered when clicked on move button.
+            12. defaultData - Default data for repeater. It is an array or object of any kind of objects. This data is taken when the bound data is not available.
+            13. dataType - Data type for repeater. Following are the valid values for this property - "array", "object". Default value is "array".
+            14. dropDataPrefix - Prefix to be removed from the dropped data and then parsed.
+            15. dropDataType - Drop data type. Following are the valid values for this property - "text/plain", "application/json". Default value is "text/plain".
+            16. onDropData - Event to be triggered when data is dropped.
+            17. filterCondition - Filter condition using "Data." to filter the array items. Eg: "Data.marks > 20" gives all the objects with marks greater than 20.
+            18. layout - Following are the valid values for this property - "ROWLAYOUT", "ROWCOLUMNLAYOUT", "SINGLECOLUMNLAYOUT", "TWOCOLUMNSLAYOUT", "THREECOLUMNSLAYOUT", "FOURCOLUMNSLAYOUT", "FIVECOLUMNSLAYOUT". Row Layout is a flex grid with row direction. Row/Column Layout is a flex grid with row direction in desktop and column direction in mobile. Single Column Layout is a flex grid with column direction. Two Columns Layout is a div tag with display grid, and only one column. Two Columns Layout is a div tag with display grid, and only two columns but in mobile layout it is only one column in mobile layout. Three Columns Layout is a div tag with display grid, and only three columns and only two columns in tablet and one in mobile layout. Four Columns Layout is a div tag with display grid, and only four columns, two columns in tablet and one in mobile layout. Five Columns Layout is a div tag with display grid, and only five columns, two columns in tablet and one in mobile. Default value is "ROWLAYOUT".
+            20. readOnly - Read only property of the repeater. If true, the repeater will be disabled for any changes like addition, deletion or movement. If false or nothing, the repeater is enabled and can be clicked.
+            21. visibility - Visibility property of the repeater. If false, the repeater will be hidden. If true or nothing, the repeater is visible.
+
+    

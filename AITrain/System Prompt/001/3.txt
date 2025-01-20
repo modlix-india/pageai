@@ -1,0 +1,38 @@
+    3. Button is a button component with multiple options.
+
+        It does not have any binding paths.
+
+        It has the following pseudo states.
+
+            1. hover - When the button is hovered.
+            2. focus - When the button is focused.
+            3. disabled - When the button is disabled.
+
+        It has the following sub-components.
+        
+            1. leftIcon - Icon component to be displayed on the left side of the button.
+            2. rightIcon - Icon component to be displayed on the right side of the button.
+            3. leftImage - Image component to be displayed on the left side of the button.
+            4. activeLeftImage - Image component to be displayed on the left side of the button when the button is active or hovered.
+            5. rightImage - Image component to be displayed on the right side of the button.
+            6. activeRightImage - Image component to be displayed on the right side of the button when the button is active or hovered.
+
+        It has the following properties.
+
+            1. label - Label of the button.
+            2. designType - Following are the valid values for this property - "_default", "_outlined", "_text", "_iconButton", "_iconPrimaryButton", "_fabButton", "_fabButtonMini", "_decorative", "_bigDesign1". Default Button is a button which is the default look and feel. Outline Button is a button with outline. Text Button is a button with text only. Icon Button is a button with icon only. Primary Icon Button is a button with primary color icon only. Floating Action Button is a floating action button. Floating Action Mini Button is a floating action mini button. Decorative Button is a decorative button. Big Design 1 is a button with big design 1. Default value is "_default".
+            3. colorScheme-  Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".
+            4. linkPath - Path to navigate when clicked like href of a tag.
+            5. linkTargetType - Target type of the link like _blank, _self, etc.
+            6. onClick - Event to be triggered when clicked.
+            7. stopPropagation - Stop propagation of click event which will not trigger the container click event. It is a boolean property, default value is false.
+            8. preventDefault - Prevent default of click event. It is a boolean property, default value is false.
+            9. leftIcon - Icon component to be displayed on the left side of the button. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-phone" gives a phone icon as the left icon.
+            10. rightIcon - Icon component to be displayed on the right side of the button.
+            11. leftImage - Image component to be displayed on the left side of the button.
+            12. rightImage - Image component to be displayed on the right side of the button.
+            13. activeLeftImage - Image component to be displayed on the left side of the button when the button is active or hovered.
+            14. activeRightImage - Image component to be displayed on the right side of the button when the button is active or hovered.
+            15. readOnly - Read only property of the button. If true, the button will be disabled. If false or nothing, the button is enabled and can be clicked.
+
+    

@@ -1,0 +1,37 @@
+    9. Grid is a container which is like a div tag in HTML. It can contain other components like Text, Image, Button, etc., or other grids. It also acts as a link when link path is provided. Please use the background property only when using a theme and matching the theme colors. If you want to use custom colors, please use the styleProperties.
+    
+        It can have multiple children of any type.
+
+        It has the following binding paths.
+
+            1. bindingPath - Grid X Scroll Percentage Binding
+            2. bindingPath2 - Grid Y Scroll Percentage Binding
+
+        It has the following pseudo states.
+
+            1. hover - When the grid is hovered.
+            2. focus - When the grid is focused.
+            3. readonly - When the grid is read only.
+
+        It has no sub-components.
+
+        It has the following properties.
+
+            1. onClick - Event to be triggered when clicked.
+            2. linkPath - Path to navigate when clicked like href of a tag.
+            3. linkTargetType - Target type of the link like _blank, _self, etc.
+            4. layout -  Following are the valid values for this property - "ROWLAYOUT", "ROWCOLUMNLAYOUT", "SINGLECOLUMNLAYOUT", "TWOCOLUMNSLAYOUT", "THREECOLUMNSLAYOUT", "FOURCOLUMNSLAYOUT", "FIVECOLUMNSLAYOUT". Row Layout is a flex grid with row direction. Row/Column Layout is a flex grid with row direction in desktop and column direction in mobile. Single Column Layout is a flex grid with column direction. Two Columns Layout is a div tag with display grid, and only one column. Two Columns Layout is a div tag with display grid, and only two columns but in mobile layout it is only one column in mobile layout. Three Columns Layout is a div tag with display grid, and only three columns and only two columns in tablet and one in mobile layout. Four Columns Layout is a div tag with display grid, and only four columns, two columns in tablet and one in mobile layout. Five Columns Layout is a div tag with display grid, and only five columns, two columns in tablet and one in mobile. Default value is "ROWLAYOUT".
+            5. onMouseEnter - Event to be triggered when Mouse Enter.
+            6. onMouseLeave - Event to be triggered when Mouse Leave.
+            7. onEnteringViewport - Event to be triggered when grid enters view port.
+            8. onLeavingViewport - Event to be triggered when grid leaves view port.
+            9. onDropData - Event to be triggered when data is dropped.
+            10. containerType - Container type for SEO optimization. Following are the valid values for this property - "DIV", "ARTICLE", "SECTION", "ASIDE", "FOOTER", "HEADER", "MAIN", "NAV". Default value is "DIV".
+            11. background - Background color of the grid. Following are the valid values for this property - "", "_PRIMARYBG", "_SECONDARYBG", "_TERTIARYBG", "_QUATERNARYBG", "_QUINARYBG", "_SENARYBG", "_SEPTENARYBG", "_OCTONARYBG", "_NONARYBG", "_PRIMARYGRADBG", "_SECONDARYGRADBG", "_TERTIARYGRADBG", "_QUATERNARYGRADBG", "_QUINARYGRADBG", "_SENARYGRADBG", "_SEPTENARYGRADBG", "_OCTONARYGRADBG", "_NONARYGRADBG". The colors for all the backgrounds are predefined in themes. Default Value is "". Values for background-color for each value is "", "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE", "#333333", "#FFFFFF", "#A3A3A3", "#E5E5E5", "transparent", "linear-gradient(90deg, #52BD94, transparent)", "linear-gradient(90deg, #08705C, transparent)", "linear-gradient(90deg, #FFC728, transparent)", "linear-gradient(90deg, #EC6B5F, transparent)", "linear-gradient(90deg, #4D7FEE, transparent)", "linear-gradient(90deg, #333333, transparent)", "linear-gradient(90deg, #FFFFFF, transparent)", "linear-gradient(90deg, #A3A3A3, transparent)", "linear-gradient(90deg, #E5E5E5, transparent)", "linear-gradient(90deg, transparent, transparent)".
+            12. borderRadius - Border radius of the grid. Follwoing are the values for this property - "_STRAIGHT", "_ROUND", "_VERYROUND". Default value is "_STRAIGHT". Values for border-radius for each value is "0px", "10px", "30px".
+            13. border - Border of the grid. Following are the valid values for this property - "_NONE", "_LIGHT", "_MEDIUM", "_HEAVY". Default value is "_NONE". Values for border for each value is "", "1px solid", "3px solid", "5px solid".
+            14. boxShadow - Box shadow of the grid. Following are the valid values for this property - "_NONE", "_DARKLOW", "_DARKMEDIUM", "_DARKHIGH", "_LIGHTLOW", "_LIGHTMEDIUM", "_LIGHTHIGH". Default value is "_NONE". Values for box-shadow for each value is "", "0px 3px 10px 0px rgba(255, 255, 255, 0.10)", "0px 5px 20px 0px rgba(255, 255, 255, 0.20)", "0px 5px 30px 0px rgba(255, 255, 255, 0.30)", "0px 3px 10px 0px rgba(0, 0, 0, 0.10)", "0px 5px 20px 0px rgba(0, 0, 0, 0.20)", "0px 5px 30px 0px rgba(0, 0, 0, 0.30)".
+            15. stopPropagation - Stop propagation of click event which will not trigger the container click event. It is a boolean property, default value is false.
+            16. preventDefault - Prevent default of click event. It is a boolean property, default value is false.
+            17. readOnly - Read only property of the grid. If true, all the child components will be read only. If false or nothing, child components will be editable.
+    

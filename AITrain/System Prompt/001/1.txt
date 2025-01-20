@@ -1,0 +1,66 @@
+    1. Animator is used to animate its children in a div container. It can contain other components that require animations.
+
+        It can have multiple children of any type.
+
+        It does not have any binding paths.
+
+        It has no pseudo states.
+
+        It has the following sub-components.
+            1. container - A div tag to animate its children.
+
+        It has the following properties.
+            1. animation - It is a property of type array of objects. Each object is a component properties with the sub properties listed below.
+                1. animationName - The name of the animation. Following are the valid values for this property - "_bounce", "_flash", "_pulse", "_shake", "_spin", "_swing", "_tada", "_wobble", "_bounceIn", "_bounceInDown", "_bounceInLeft", "_bounceInRight", "_bounceInUp", "_bounceOut", "_bounceOutDown", "_bounceOutLeft", "_bounceOutRight", "_bounceOutUp", "_fadeIn", "_fadeInDown", "_fadeInDownBig", "_fadeInLeft", "_fadeInLeftBig", "_fadeInRight", "_fadeInRightBig", "_fadeInUp", "_fadeInUpBig", "_fadeOut", "_fadeOutDown", "_fadeOutDownBig", "_fadeOutLeft", "_fadeOutLeftBig", "_fadeOutRight", "_fadeOutRightBig", "_fadeOutUp", "_fadeOutUpBig", "_flip", "_flipInX", "_flipInY", "_flipOutX", "_flipOutY", "_lightSpeedIn", "_lightSpeedOut", "_rotateIn", "_rotateInDownLeft", "_rotateInDownRight", "_rotateInUpLeft", "_rotateInUpRight", "_rotateOut", "_rotateOutDownLeft", "_rotateOutDownRight", "_rotateOutUpLeft", "_rotateOutUpRight", "_hinge", "_rollIn", "_rollOut", "_zoomIn", "_zoomInDown", "_zoomInLeft", "_zoomInRight", "_zoomInUp", "_zoomOut", "_zoomOutDown", "_zoomOutLeft", "_zoomOutRight", "_zoomOutUp", "_waitOpacity". Default value is "_bounce".
+                2. animationDuration - The duration of the animation in milliseconds. Default value is 0.
+                3. animationDelay - The delay of the animation in milliseconds. Default value is 0.
+                4. animationIterationCount - The number of times the animation should be played. Default value is 1.
+                5. animationDirection - The direction of the animation. Following are the valid values for this property - "normal", "reverse", "alternate", "alternate-reverse". Default value is "normal".
+                6. animationFillMode - The fill mode of the animation. Following are the valid values for this property - "none", "forwards", "backwards", "both". Default value is "none".
+                7. animationTimingFunction - The timing function of the animation. Following are the valid values for this property - "ease", "ease-in", "ease-out", "ease-in-out", "linear", "step-start", "step-end", "steps", "cubic-bezier". Default value is "ease".
+                8. condition - This animation is applied only if this condition is true. Default value is true. It can have an expression based on the store paths.
+                9. observation - This animation is applied only if this observation is satisfied. The allowed values are "none", "entering" and "exiting". Default value is "none".
+        Example of the animation component, which animates two children components a text and an image by applying two different animations.
+        ```
+            {
+                "key": "3QhDECFH8ngW2gX3cUBZtE",
+                "name": "Animator",
+                "type": "Animator",
+                "displayOrder": 7,
+                "properties": {
+                    "animation": {
+                        "10LpYqqjUcHUWR5RLciYq7": {
+                        "key": "10LpYqqjUcHUWR5RLciYq7",
+                        "order": 1,
+                        "property": {
+                            "value": {
+                            "animationDuration": { "value": 2000 },
+                            "animationName": { "value": "_flash" },
+                            "animationDelay": {},
+                            "animationIterationCount": { "value": "infinite" },
+                            "animationTimingFunction": { "value": "linear" }
+                            }
+                        }
+                        },
+                        "6THwpdEfKrDgdyRkfys5PD": {
+                        "key": "6THwpdEfKrDgdyRkfys5PD",
+                        "order": 2,
+                        "property": {
+                            "value": {
+                            "animationName": { "value": "_shake" },
+                            "animationDuration": { "value": 3000 },
+                            "animationIterationCount": { "value": "5" },
+                            "animationTimingFunction": { "value": "ease-in-out" }
+                            }
+                        }
+                        }
+                    }
+                },
+                "children": {
+                    "textComponentKey": true,
+                    "imageComponentKey": true
+                }
+            }
+        ```
+
+    

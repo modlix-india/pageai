@@ -1,0 +1,30 @@
+    6. Checkbox is a component to set a boolean value. It is like a checkbox in HTML wrapped in div tags.
+
+        It cannot have any children.
+
+        It has the following binding paths.
+        
+            1. bindingPath - Checkbox Binding Path of a boolean value. The value of the checkbox is set based on the value of the binding path.
+
+        It has the following pseudo states.
+        
+            1. hover - When the checkbox is hovered.
+            2. focus - When the checkbox is focused.
+            3. disabled - When the checkbox is disabled.
+
+        It has the following sub-components.
+        
+            1. label - Label component to be displayed next to the checkbox.
+            2. checkbox - The component which represents the box behind the tick.
+            3. thumb - The component which represents the tick.
+
+        It has the following properties.
+
+            1. label - Label of the checkbox.
+            2. orientation - Checkbox orientation. Following are the valid values for this property - "HORIZONATAL", "VERTICAL". Default value is "HORIZONATAL". In vertical orientation the label is displayed below the checkbox.
+            3. designType - Following are the valid values for this property - "_default", "_outlined", "_filled". Default value is "_default". Default Checkbox is a checkbox which is the default look and feel. Outline Checkbox is a checkbox with outline. Filled Checkbox is a checkbox with fill.
+            4. hideLabel - When this option is set to true, the label will be hidden. Default value is false.
+            5. colorScheme-  Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".
+            6. onClick - Event to be triggered when clicked.
+            7. readOnly - Read only property of the checkbox. If true, the checkbox will be disabled. If false or nothing, the checkbox is enabled and can be clicked.
+            8. visibility - Visibility property of the checkbox. If false, the checkbox will be hidden. If true or nothing, the checkbox is visible.

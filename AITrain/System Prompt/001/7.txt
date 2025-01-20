@@ -1,0 +1,94 @@
+    7. Dropdown is a component to select a single value from a list of values. It is like a dropdown in HTML. It is designed in such a way that an input box is used with readonly option to show the selected value. When the input box is focused the dropdown is show to select the values. The dropdown can have a search box to search the values. The values are shown in a list and the user can select a value from the list.
+
+        It cannot have any children.
+
+        It has the following binding paths.
+        
+            1. bindingPath - Dropdown Binding Path the selected value. The value of the dropdown is based on the data that is set to the data property and the properties define the value and the label of the dropdown.
+            2. bindingPath2 - For large data set a search box is provided. The value of the search box is stored in this path.
+
+        It has the following pseudo states.
+
+            1. hover - When the dropdown is hovered.
+            2. focus - When the dropdown is focused.
+            3. disabled - When the dropdown is disabled.
+
+        It has the following sub-components.
+
+            1. dropDownContainer - The container of the dropdown which shows the list of values.
+            2. dropdownItem - The container of each item in the dropdown.
+            3. dropdownItemLabel - The label of each item in the dropdown.
+            4. dropdownCheckIcon - The icon to show when the item is selected.
+            5. leftIcon - Icon component to be displayed on the left side of the dropdown.
+            6. rightIcon - Icon component to be displayed on the right side of the dropdown.
+            7. inputBox - Input box to show the selected value.
+            8. label - Label component to be displayed next to the dropdown or above the dropdown. based on the layout.
+            9. asterisk - Asterisk component to be displayed next to the label for marking it as mandatory.
+            10. supportText - Support text to be displayed below the dropdown.
+            11. errorText - Error text to be displayed below the dropdown based on the validations.
+            12. errorTextContainer - Container of the error text.
+
+        It has the following properties.
+
+            1. placeholder - Dropdown placeholder that's shown when no item is selected in dropdown. And the label is not obstructing the placeholder. In the case of noFloat is set to true.
+            2. showMandatoryAsterisk - Show Mandatory Asterisk. Default value is false. When this option is set to true and a validation of type Mandatory is set, an asterisk is shown next to the label.
+            3. isMultiSelect - Allows the users to select multiple options. Default value is false. When multiple options are selected, the dropdown only show the count of the selected items.
+            4. runEventOnDropDownClose - Allows the users to run event on close of dropdown. Default value is false. When this option is set to true, the event is triggered when the dropdown is closed. This is useful when the isMultiSelect is set to true. The event is not triggered when the options are selected.
+            5. isSearchable - Allows the users search options. Default value is false. When this option is set to true, a search box is shown in the dropdown.
+            6. noFloat - Dropdown without floating label. Default value is false. When this option is set to true, the label is shown above the dropdown and not floating.
+            7. label - Label text that's shown on top of dropdown.
+            8. data - Data that is used to render dropdown. Usually an expression that returns an array or an object.
+            9. clearSearchTextOnClose - Clear Search on close. Default value is false. When this option is set to true, the search box is cleared when the dropdown is closed.
+            10. onSearch - Search event to run on search. When the search box is used, this event is triggered. Also this event is triggered when the dropdown is opened or closed.
+            11. onScrollReachedEnd - When the scroll reaches the end of the dropdown. This event is triggered. When trying to pull more data from the server, this event is useful.
+            12. searchLabel - Label for search box.
+            13. closeOnMouseLeave - Dropdown will be closed on mouse cursor leaving dropdown container when this property is true. Default value is true.
+            14. validation -
+            15. readOnly - Read only property of the dropdown. If true, the dropdown will be disabled. If false or nothing, the dropdown is enabled and can be clicked.
+            16. visibility - Visibility property of the dropdown. If false, the dropdown will be hidden. If true or nothing, the dropdown is visible.
+            17. datatype - Data type that is supplied to the dropdown with data property. Allowed values are LIST_OF_STRINGS, LIST_OF_OBJECTS, LIST_OF_LISTS, OBJECT_OF_PRIMITIVES, OBJECT_OF_OBJECTS, OBJECT_OF_LISTS. Default value is LIST_OF_STRINGS. LIST_OF_STRINGS is an array of strings. LIST_OF_OBJECTS is an array of objects. LIST_OF_LISTS is an array of arrays. OBJECT_OF_PRIMITIVES is an object with key value pairs where values are primitives. OBJECT_OF_OBJECTS is an object with key value pairs where values are objects. OBJECT_OF_LISTS is an object with key value pairs where values are lists.
+            18. uniqueKeyType - A key to identify every item uniquely in the list, RANDOM option creates a random id every time. "KEY" is the default value. The path of the key. 
+                For example: 
+                    If the there is a list of students given for the data property like
+
+                    ```
+                    {
+                        "data": {
+                            "type": "EXPRESSION",
+                            "expression": "Page.students"
+                        },
+                        "uniqueKeyType": {
+                            "type": "VALUE",
+                            "value": "KEY"
+                        },
+                        "uniqueKey": {
+                            "type": "VALUE",
+                            "value": "id"
+                        }
+                    }
+                    ```
+
+                    and the content in the path "Page.students" is [{"id" : 1, "name": "Jhon"}, {"id" : 2, "name": "Doe"}], then the uniqueKey is "id".
+            If the uniqueKeyType is set to "RANDOM", then a random id is generated every time for each student in the list. If the uniqueKeyType is set to "INDEX", then the index of the student in the list is used as the unique key. If the uniqueKeyType is set to "OBJECT", then the student object is used as the unique key.
+
+            If the supplied data is an Object, then the "INDEX" behaves differently. If data is {
+                "student1": {
+                    "name": "Jhon"
+                },
+                "student2": {
+                    "name": "Doe"
+                }
+            }, then the index is the key of the object. If the uniqueKeyType is set to "INDEX", then the index is the key of the object. "student1" and "student2" in this case.
+            19. selectionType - This is the value that is selected and stored in the bindingPath on selection. Default value is "KEY". Following are the valid values for this property - "KEY", "INDEX", "OBJECT". "KEY" is the key of the selected item. "INDEX" is the index of the selected item. "OBJECT" is the selected item. These selectionType works exactly like uniqueKeyType.
+            20. labelKeyType - This is the label that user sees on the screen, OBJECT works when value is primitive like string. Default value is "OBJECT". Following are the valid values for this property - "KEY", "INDEX", "OBJECT". "KEY" is the key of the selected item. "INDEX" is the index of the selected item. "OBJECT" is the selected item. These labelKeyType works exactly like uniqueKeyType.
+            21. selectionKey - Key value that is used to generate selection value when selection type is selected as KEY.
+            22. uniqueKey - Key value that is used to get unique key value when unique key type is selected as KEY.
+            23. labelKey - Key value that is used to get label value when label key type is selected as KEY.
+            24. clearOnSelectingSameValue - Clear on selecting same value from the binding path.
+            25. leftIcon - Icon to be shown on the left side. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-phone" gives a phone icon.
+            26. rightIcon - Icon to be shown on the right side when closed. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-phone" gives a phone icon.
+            27. rightIconOpen - Icon to be shown on the right side when opened. It is usually a font awesome free icon, or a material icon. Example: "fa fa-solid fa-phone" gives a phone icon.
+            28. designType - Following are the valid values for this property - "_default", "_outlined", "_filled", "_bigDesign1", "_text". Default value is "_default". Default Dropdown is a dropdown which is the default look and feel. Outline Dropdown is a dropdown with outline. Filled Dropdown is a dropdown with fill. Big Design 1 is a dropdown with big design 1. Text Dropdown is a dropdown with text only.
+            29. colorScheme-  Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".
+            30. onClick - Event to be triggered when clicked.
+            31. validation - 

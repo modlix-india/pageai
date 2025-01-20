@@ -1,0 +1,33 @@
+    5. Carousel is a component to display multiple children in a carousel. All the children are displayed in a carousel and the user can swipe to see the next or previous child.
+
+        It can have multiple children of any type but preferably grid.
+
+        It has no binding paths.
+
+        It has no pseudo states.
+
+        It has the following sub-components.
+        
+            1. arrowButtonsContainer - Container for arrow buttons.
+            2. arrowButtons - Arrow buttons to navigate to the next or previous child.
+            3. slideButtonsContainer - Container for slide buttons. Usually where the numbers are shown.
+            4. dotButtons - Dot buttons to navigate to the next or previous child.
+
+        It has the following properties.
+
+            1. showArrowButtons - When this option is set to true, User will be able to navigate to the next or previous child using arrow buttons. Default value is false.
+            2. showDotsButtons - When this option is set to true, User will be able to navigate any child represented by a dot. Default value is false.
+            3. slideSpeed - Speed of the slide in milliseconds. Default value is 2000.
+            4. animationType - Following are the valid values for this property - "slide", "slideover", "fadeover", "fadeoutin", "crossover". Slide is a slide animation. Slide Over is a slide over animation. Fade Over is a fade over animation. Fade Out In is a fade out in animation. Cross Over is a cross over animation. Default value is "fadeover".
+            5. animationDuration - The duration of the animation in milliseconds. Default value is 2000.
+            6. easing - The easing of the animation. Following are the valid values for this property - "linear", "ease", "ease-in", "ease-out", "ease-in-out", "crossover". Default value is "ease".
+            7. autoPlay - When this option is set to true, the carousel will automatically slide to the next child. Default value is false.
+            8. dotsButtonType - Following are the valid values for this property - "circle", "square", "none". Default value is "circle". It is the shape of the dots show in the carousel per slide.
+            9. dotsButtonIconType - Following are the valid values for this property - "regular", "solid". Default value is "regular". It is the type of the dots show in the carousel per slide. Regular is a dot without fill. Solid is a dot with fill.
+            10. hasNumbersInSlideNav - When this option is set to true, the slide navigation buttons will have numbers. Default value is false. All the dots will have numbers.
+            11. slideNavButtonPosition - Following are the valid values for this property - "Top", "Right", "Bottom", "Left", "OutsideBottom", "OutsideTop". Default value is "Bottom". It is the position of the slide navigation buttons or dots in the carousel.
+            12. arrowButtons - Following are the valid values for this property - "Middle", "LeftTop", "RightTop", "LeftBottom", "RightBottom", "OutsideBottomLeft", "OutsideBottomRight", "OutsideTopLeft", "OutsideTopRight". Default value is "Middle". It is the position of the arrow buttons in the carousel. 
+            13. showNavigationControlsOnHover - When this option is set to true, the navigation controls, i.e; arrows and buttons, will be displayed when the carousel is hovered upon. Default value is false.
+            14. visibility - Visibility property of the carousel. If false, the carousel will be hidden. If true or nothing, the carousel is visible.
+
+    
