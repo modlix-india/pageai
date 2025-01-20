@@ -54,8 +54,10 @@
                     ```
                     {
                         "data": {
-                            "type": "EXPRESSION",
-                            "expression": "Page.students"
+                            "location": {
+                                "type": "EXPRESSION",
+                                "expression": "Page.students"
+                            }
                         },
                         "uniqueKeyType": {
                             "type": "VALUE",
@@ -91,4 +93,4 @@
             28. designType - Following are the valid values for this property - "_default", "_outlined", "_filled", "_bigDesign1", "_text". Default value is "_default". Default Dropdown is a dropdown which is the default look and feel. Outline Dropdown is a dropdown with outline. Filled Dropdown is a dropdown with fill. Big Design 1 is a dropdown with big design 1. Text Dropdown is a dropdown with text only.
             29. colorScheme-  Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".
             30. onClick - Event to be triggered when clicked.
-            31. validation - 
+            31. validation - It is described in the validation property section in component definition. It can use all the validation types.

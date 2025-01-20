@@ -82,7 +82,13 @@ Since these are all react js components all will be finally rendered into html. 
             "displayOrder": 1,
             "properties": {
                 "<property1>": { "value": "<value>" },
-                "<property2>": { "value": "<value>" },
+                "<property2>": { 
+                    "value": "<value>",
+                    "location": {
+                        "type": "EXPRESSION",
+                        "expression": "<expression>"
+                    }
+                },
                 "<array_type_property3>": { 
                     "<unique key 1>": { 
                         "key": "<unique key 1>",
@@ -92,7 +98,13 @@ Since these are all react js components all will be finally rendered into html. 
                      "<unique key 2>": { 
                         "key": "<unique key 2>",
                         "order": 2,
-                        "property": { "value": "<value>" }
+                        "property": { 
+                            "value": "<value>",
+                            "location": {
+                                "type": "EXPRESSION",
+                                "expression": "<expression>"
+                            } 
+                        }
                      }
                 }
             },
@@ -105,7 +117,13 @@ Since these are all react js components all will be finally rendered into html. 
                     "resolutions" : {
                         "ALL" : {
                             "<css property 1>": {"value" : "<css value>"},
-                            "<css property 2>": {"value" : "<css value>"},
+                            "<css property 2>": {
+                                "value" : "<css value>"
+                                "location": {
+                                    "type": "EXPRESSION",
+                                    "expression": "<expression>"
+                                }    
+                            },
                             "<css property 3>:<pseudo state(ex: hover)>": {"value" : "<css value>"},
                             "<sub component name>-<css property 4>": {"value" : "<css value>"},
                             "<sub component name>-<css property 5>:<pseudo state(ex: hover)>": {"value" : "<css value>"}
@@ -127,7 +145,24 @@ Since these are all react js components all will be finally rendered into html. 
             "properties": {
                 "<property1>": { "value": "<value>" },
                 "<property2>": { "value": "<value>" },
-                "<array_type_property3>": { "value": ["<array value 1>", "<array value 2>"] }
+                "<array_type_property3>":  { 
+                    "<unique key 1>": { 
+                        "key": "<unique key 1>",
+                        "order": 1,
+                        "property": { "value": "<value>" }
+                     },
+                     "<unique key 2>": { 
+                        "key": "<unique key 2>",
+                        "order": 2,
+                        "property": { 
+                            "value": "<value>",
+                            "location": {
+                                "type": "EXPRESSION",
+                                "expression": "<expression>"
+                            } 
+                        }
+                     }
+                }
             }
         },
         "<Component Key 3>": {
@@ -177,6 +212,65 @@ Since these are all react js components all will be finally rendered into html. 
             Properties (properties) :
 
                 Properties for each type of component are different and a detailed list of properties for each component is specified in the end of this document.
+
+                Many editable components like text box, text area, dropdown has a special property called validation. It is an array type property. The structure for array type property is shown above.
+
+                The validation property is an array of objects. Each object has a type and a message. The type is the type of validation. The allowed types are "MANDATORY", "REGEX", "STRING_LENGTH", "BOOLEAN_CONDITION", "SCHEMA_TYPE", "EMAIL", "NUMBER_VALUE", "FILE_SIZE". The message is the message to be displayed when the validation fails. The message is a property. The validation is triggered. Not all types are allowed for all components. The allowed types for each component are specified in the detailed description of the component. 
+
+                    MANDATORY - if the type is mandatory it requires only the message property. The message is the message to be displayed when the field is mandatory and not filled.
+
+                    REGEX - if the type is regex it requires the message and the regex property. The pattern property is the regular expression to be matched, it is of type string. The message is the message to be displayed when the field does not match the regular expression. Also, ignoreCase property is used to ignore the case of the regular expression, default value is false.
+
+                    STRING_LENGTH - if the type is string length it requires the message, minLength and maxLength properties. The minLength is the minimum length of the string, it is of type number. The maxLength is the maximum length of the string, it is of type number. The message is the message to be displayed when the length of the string is not in the range.
+
+                    BOOLEAN_CONDITION - if the type is boolean condition it requires the message and the condition property. The condition is the condition to be checked, it is of type boolean, generally an expression is used to validate a condition. The message is the message to be displayed when the condition is false.
+
+                    SCHEMA_TYPE - if the type is schema type it requires the message and the schema property. The schema is the schema to be validated, it is of type object. It is json schema. The message is the message to be displayed when the schema is not validated.
+
+                    EMAIL - if the type is email it requires the message property. The message is the message to be displayed when the email is not valid.
+                    
+                    NUMBER_VALUE - if the type is number value it requires the message, minValue and maxValue properties. The minValue is the minimum value of the number, it is of type number. The maxValue is the maximum value of the number, it is of type number. The message is the message to be displayed when the number is not in the range. If the minValue and maxValue is not specified, the number is checked for being a number.
+
+                    FILE_SIZE - if the type is file size it requires the message, minSize and maxSize properties. The minSize is the minimum size of the file, it is of type number. The maxSize is the maximum size of the file, it is of type number. The message is the message to be displayed when the file size is not in the range. The file size is in bytes.
+
+                    Example for validation property with only MANDATORY validation : 
+                    ```
+                        {
+                            "58xtKrpsWeNgL1YwhtP6e0": {
+                                "key": "58xtKrpsWeNgL1YwhtP6e0",
+                                "order": 1,
+                                "property": {
+                                "value": { 
+                                    "type" : { "value": "MANDATORY" },
+                                    "message": { "value": "Name cannot be empty" } }
+                                }
+                            }
+                        }
+                    ```
+
+                    Example for validation property with MANDATORY and STRING_LENGTH validation :
+                    ```
+                        {
+                            "58xtKrpsWeNgL1YwhtP6e0": {
+                                "key": "58xtKrpsWeNgL1YwhtP6e0",
+                                "order": 1,
+                                "property": {
+                                "value": { 
+                                    "type" : { "value": "MANDATORY" },
+                                    "message": { "value": "Name cannot be empty" } }
+                                }
+                            },
+                            "68xtKrpsWeNgL1YwhtP6e1": {
+                                "key": "68xtKrpsWeNgL1YwhtP6e1",
+                                "order": 2,
+                                "property": {
+                                "value": { 
+                                    "type" : { "value": "STRING_LENGTH" },
+                                    "message": { "value": "Name should be atleast 3 characters" } 
+                                }
+                            }
+                        }
+                    ```
 
             Style Properties (styleProperties) :
 

@@ -1,0 +1,50 @@
+    8. Gallery component is not like any other gallery components. Usually gallery components will show a preview of the images and upon clicking an image it launches in to a mode that occupies the entire page like a popup to show the slide show of the images in it. For one to launch a Gallery they have to supply the list of images as part of data property and then use Grid and/or Image components to show the images. On click of any of these arranged images can trigger an event to set a store path to true which is bound in the binding path. For example "Page.showGallery" will be set to true on click of any image using eventFunctions. Also in that eventFunction one can set from which image the gallery should start to a different path that is bound to the bindingPath2 of the Gallery. If this is not available it will start from the first image provided in the data. It has options like fullscreen, magnifying and listing and other options.
+
+    It cannot have any children.
+
+    It has the following binding paths.
+    
+        1. bindingPath - Gallery toggle binding path to show the gallery.
+        2. bindingPath2 - Gallery starting image url that is shown when the gallery is opened which also should be part of the data.
+
+    It does not have any pseudo states.
+
+    It has the following sub-components.
+
+        1. toolbarLeftColumn - The left column of the toolbar.
+        2. toolbarRightColumn - The right column of the toolbar.
+        3. toolbarButton - Toolbar buttons.
+        4. arrowButtons - Arrow buttons to navigate between images.
+        5. slideImage - The image that is shown in the gallery.
+        6. thumbnailContainer - The container of the thumbnails of the images that are shown in the gallery.
+        7. thumbnailImageDiv - Each thumbnail image container.
+        8. thumbnailImage - The thumbnail image.
+        9. previewContainer - The container of the preview of the images that are shown in the gallery.
+        10. previewCloseButton - Close button of the preview.
+        11. previewList - The list of the preview images.
+        12. previewImageDiv - Each preview image container.
+        13. previewImage - The preview image.
+
+    It has the following properties.
+
+        1. data - Data that is used to render the gallery. Usually an expression that returns an array.
+        2. showClose - Show close button. Default value is true. When this option is set to false, the close button is not shown.
+        3. closeOnEscape - Close gallery on escape key. Default value is true. When this option is set to false, the gallery is not closed on pressing the escape key.
+        4. closeOnOutsideClick - Close gallery on outside click. Default value is true. When this option is set to false, the gallery is not closed on clicking outside the gallery.
+        5. zoom - Zoom option. Default value is true. When this option is set to false, the zoom option is not shown.
+        6. zoomInFactor - Zoom in factor. Default value is 1.6. The factor by which the image is zoomed in.
+        7. fullScreen - Full screen option. Default value is true. When this option is set to false, the full screen option is not shown.
+        8. showArrowButtons - Show arrow buttons. Default value is true. When this option is set to false, the arrow buttons are not shown.
+        9. arrowButtons - Position of the arrow buttons. Allowed values are "_Middle", "_LeftTop", "_RightBottom", "_LeftBottom", "_RightTop". Default value is "_Middle".
+        10. previewMode - Preview of the images in the gallery. Allowed values are "Thumbnail", "Preview". Default value is "Thumbnail". When this option is set to "Thumbnail", the thumbnails of the images are shown. When this option is set to "Preview", the preview of the images are shown.
+        11. position - Position of the preview images. Allowed values are "Top", "Bottom", "Left", "Right". Default value is "Right".
+        12. autoPlay - Auto play option. Default value is false. When this option is set to true, the images are played automatically.
+        13. slideSpeed - Interval between the images in milliseconds. Default value is 2000. The time interval between the images.
+        14. animationType - The type of animation to be used. Allowed values are "fadeover", "fadeoutin", "slide", "slideover", "crossover". Default value is "fadeover".
+        15. animationDuration - The duration of the animation in milliseconds. Default value is 2000. The time taken for the animation to complete.
+        16. easing - The easing function to be used for animation. Allowed values "ease", "linear", "ease", "ease-in", "ease-out", "ease-in-out", "crossover". Default value is "ease".
+        17. datatype - The type of data that is used to render the gallery. Allowed values are "LIST_OF_STRINGS" and "LIST_OF_OBJECTS". Default value is "LIST_OF_STRINGS". When this option is set to "LIST_OF_STRINGS", the data is an array of strings. When this option is set to "LIST_OF_OBJECTS", the data is an array of objects.
+        18. selectionKey - The key to be used to pick the value from the object when the datatype is "LIST_OF_OBJECTS".
+        19. visibility - Visibility property of the dropdown. If false, the dropdown will be hidden. If true or nothing, the dropdown is visible.
+
+
