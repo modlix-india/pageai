@@ -1,0 +1,59 @@
+27. TimePicker is a component that creates a time input field with various time selection options and formats.
+
+    It has the following binding paths.
+
+        1. value - The selected time value.
+
+    It has the following sub-components.
+    
+        1. timePickerContainer - The container for the time picker.
+        2. timePickerInput - The actual time input element.
+        3. label - The label for the time picker.
+        4. supportingText - Helper text below the time picker.
+        5. timePickerDropdown - The dropdown containing time selection options.
+
+    It has the following properties.
+
+        1. label - Label for the time picker. It is a string property, translatable.
+        2. noFloat - Whether to disable floating label. It is a boolean property, default value is false.
+        3. showMandatoryAsterisk - Whether to show mandatory asterisk. It is a boolean property, default value is false.
+        4. placeholder - Placeholder text in the time picker. Default value is empty string.
+        5. timeDesignType - Type of time selection interface. Default value is "none". Valid values are:
+            - None: No time selection
+            - comboBoxes12Hr: 12-hour format combo boxes
+            - comboBoxes24Hr: 24-hour format combo boxes
+            - dial: Analog clock dial
+            - comboBoxes12HrAndSeconds: 12-hour format with seconds
+            - comboBoxes24HrAndSeconds: 24-hour format with seconds
+        6. hourIntervalFrom - Starting hour for the interval (0-23). Default value is 0.
+        7. hourInterval - Hour interval step (0-23). Default value is 1.
+        8. minuteIntervalFrom - Starting minute for the interval (0-59). Default value is 0.
+        9. minuteInterval - Minute interval step (0-59). Default value is 1.
+        10. secondIntervalFrom - Starting second for the interval (0-59). Default value is 0.
+        11. secondInterval - Second interval step (0-59). Default value is 1.
+        12. displayFormat - Format to display the time. Default value is "HH:mm". Valid values are:
+            - HH:mm: 24-hour format
+            - hh:mm A: 12-hour format with AM/PM
+            - HH:mm:ss: 24-hour format with seconds
+            - hh:mm:ss A: 12-hour format with seconds and AM/PM
+        13. storageFormat - Format to store the time value. Default value is "HH:mm:ss".
+        14. validation - Validation rules for the time picker. It is a multi-valued property.
+        15. readOnly - Whether the time picker is read-only. It is a boolean property.
+        16. supportingText - Helper text to assist users. It is a string property, translatable.
+        17. onChange - Event triggered when the value changes.
+        18. onBlur - Event triggered when the time picker loses focus.
+        19. onFocus - Event triggered when the time picker gains focus.
+
+    The TimePicker component supports the following features:
+        - Multiple time selection interfaces
+        - 12-hour and 24-hour formats
+        - Customizable time intervals
+        - Seconds selection
+        - Analog clock dial
+        - Input validation
+        - Supporting text
+        - Multiple design types
+        - Responsive design
+        - Accessibility features
+        - Form integration
+        - Event handling 

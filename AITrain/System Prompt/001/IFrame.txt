@@ -1,0 +1,49 @@
+11. IFrame is an inline frame component that embeds another HTML page within the current page.
+
+    It does not have any binding paths.
+
+    It has the following properties.
+
+        1. src - The URL of the page to embed.
+        2. width - The width of the frame in CSS pixels (don't add px). Default value is "650".
+        3. height - The height of the frame in CSS pixels (don't add px). Default value is "420".
+        4. name - A targetable name for the embedded browsing context.
+        5. srcdoc - Inline HTML to embed, overriding the src attribute.
+        6. sandbox - Applies extra restrictions to the content in the frame. Multiple values can be selected:
+            - allow-downloads: Allows downloading files through the iframe
+            - allow-downloads-without-user-activation: Allows downloading files without user interaction
+            - allow-forms: Allows form submission
+            - allow-modals: Allows opening modal windows
+            - allow-orientation-lock: Allows locking screen orientation
+            - allow-pointer-lock: Allows using Pointer Lock API
+            - allow-popups: Allows popups (window.open(), target="_blank", etc.)
+            - allow-popups-to-escape-sandbox: Allows popups to open windows without inheriting sandbox restrictions
+            - allow-presentation: Allows using Presentation API
+            - allow-same-origin: Allows the iframe to maintain its origin
+            - allow-scripts: Allows running scripts
+            - allow-storage-access-by-user-activation: Allows access to storage with user activation
+            - allow-top-navigation: Allows navigating the top-level browsing context
+            - allow-top-navigation-by-user-activation: Allows top navigation with user activation
+            - allow-top-navigation-to-custom-protocols: Allows navigation to custom protocols
+            - allow-top-navigation-with-user-activation: Allows top navigation with user activation
+            - (empty value): Applies all sandbox restrictions
+        7. referrerpolicy - Indicates which referrer to send when fetching the frame's resource. Default value is "no-referrer-when-downgrade". Valid values are:
+            - no-referrer: No referrer information is sent
+            - no-referrer-when-downgrade: Send full referrer to same/more secure destinations
+            - origin: Only send the origin of the document
+            - origin-when-cross-origin: Send full referrer to same origin, origin only for cross-origin
+            - same-origin: Send referrer info to same-origin only
+            - strict-origin: Send origin to same/more secure destinations
+            - strict-origin-when-cross-origin: Full referrer for same origin, origin only for cross-origin if secure
+            - unsafe-url: Send full referrer info with all requests
+            - (empty value): Use default browser policy
+        8. loading - Loading type of the iframe. Default value is "lazy". Valid values are:
+            - eager: Loads immediately, even if not in viewport
+            - lazy: Loads only when within viewport
+        9. allowfullscreen - Boolean property to activate fullscreen mode. Default value is true.
+        10. allow - Specifies features that can be used in the iframe. Valid values include:
+            - accelerometer: Access to accelerometer sensor data
+            - autoplay: Automatic playback of media
+            - camera: Access to video input devices
+            - clipboard-write: Writing to clipboard
+            - display-capture: Access to screen capture

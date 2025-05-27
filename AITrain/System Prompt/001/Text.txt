@@ -1,0 +1,66 @@
+25. Text is a component that displays text content with various formatting options and styles.
+
+    It has the following binding paths.
+
+        1. value - The text content to display.
+
+    It has the following sub-components.
+    
+        1. text - The actual text component.
+        2. 
+
+    It has the following properties.
+
+        1. text - Text to display. It is a string property, translatable.
+        2. textType - Type of text content. Default value is "TEXT". Valid values are:
+            - TEXT: Plain text
+            - MD: Markdown format
+        3. stringFormat - Format for dates, numbers and strings. Default value is "STRING". Valid values are:
+            - STRING: Plain string
+            - UTC_TO_MM/DD/YYYY: UTC to MM/DD/YYYY
+            - UTC_TO_MM/DD/YYYY_HH:MM: UTC to MM/DD/YYYY HH:MM
+            - UTC_TO_MM/DD/YYYY_HH:MM:SS: UTC to MM/DD/YYYY HH:MM:SS
+            - UTC_TO_MM/DD/YYYY_HH:MM:SS.SSS: UTC to MM/DD/YYYY HH:MM:SS.SSS
+            - UTC_TO_YYYY-MM-DD: UTC to YYYY-MM-DD
+            - UTC_TO_YYYY-MM-DD_HH:MM: UTC to YYYY-MM-DD HH:MM
+            - UTC_TO_YYYY-MM-DD_HH:MM:SS: UTC to YYYY-MM-DD HH:MM:SS
+            - UTC_TO_YYYY-MM-DD_HH:MM:SS.SSS: UTC to YYYY-MM-DD HH:MM:SS.SSS
+            - UTC_TO_MONTH_DD,YYYY: UTC to Month DD, YYYY
+            - UTC_TO_MONTH_DD,YYYY_HH:MM: UTC to Month DD, YYYY HH:MM
+            - UTC_TO_MONTH_DD,YYYY_HH:MM:SS: UTC to Month DD, YYYY HH:MM:SS
+            - UTC_TO_MONTH_DD,YYYY_HH:MM:SS.SSS: UTC to Month DD, YYYY HH:MM:SS.SSS
+            - SYSTEM_NUMBER_FORMAT: System locale number format
+            - IN_NUMBER_FORMAT: Indian number format
+            - US_NUMBER_FORMAT: US number format
+            - EU_NUMBER_FORMAT: EU number format
+            - FR_NUMBER_FORMAT: France number format
+            - LI_NUMBER_FORMAT: German Liechtenstein number format
+            - FILE_SIZE: File size format
+        4. processNewLine - Whether to process text to show line breaks. It is a boolean property, default value is false.
+        5. textPrefix - Text prefix (only used in non-Markdown format). It is a string property.
+        6. textSuffix - Text suffix (only used in non-Markdown format). It is a string property.
+        7. removeToolTip - Whether to remove tooltip. It is a boolean property, default value is false.
+        8. textColor - Color scheme for the text. Default value is "_primaryText". Valid values are:
+            - _primaryText: Primary text color
+            - _subText: Subtext color
+            - _labelText: Label text color
+            - _paragraphText: Paragraph text color
+            - _lightPrimaryText: Light primary text color
+            - _lightSubText: Light subtext color
+            - _lightLabelText: Light label text color
+            - _lightParagraphText: Light paragraph text color
+            - _coloredText1: Colored text 1
+            - _coloredText2: Colored text 2
+            - _coloredText3: Colored text 3
+
+    The Text component supports the following features:
+        - Plain text and Markdown formatting
+        - Date and time formatting
+        - Number formatting with locale support
+        - File size formatting
+        - Line break processing
+        - Text prefixes and suffixes
+        - Multiple color schemes
+        - Tooltip support
+        - Responsive design
+        - Accessibility features 

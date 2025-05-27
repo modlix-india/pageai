@@ -1,0 +1,54 @@
+17. Popup is a modal component that creates an overlay dialog box with customizable content and behavior.
+
+    It has the following binding paths.
+
+        1. bindingPath - Controls the visibility of the popup (true/false).
+
+    It has the following sub-components.
+    
+        1. modal - The main modal container.
+        2. titleGrid - The grid containing the title and close button.
+        3. modalTitle - The title text of the popup.
+        4. closeButton - The close button icon.
+        5. closeButtonContainer - The container for the close button.
+        6. backdrop - The overlay background behind the modal.
+
+    It has the following properties.
+
+        1. showClose - Whether to show the close button. It is a boolean property, default value is true.
+        2. closeButtonPosition - Position of the close button. Default value is "RIGHT". Valid values are:
+            - LEFT: Show close button on the left
+            - RIGHT: Show close button on the right
+        3. closeOnEscape - Whether to close the popup when escape key is pressed. It is a boolean property, default value is true.
+        4. closeOnOutsideClick - Whether to close the popup when clicking outside. It is a boolean property, default value is true.
+        5. eventOnOpen - Event to be triggered when the popup opens.
+        6. eventOnClose - Event to be triggered when the popup closes.
+        7. modelTitle - Title text to be displayed at the top of the popup.
+        8. designType - Design style of the popup. Default value is "_design1". Valid values are:
+            - _design1: Padding with close button in title grid
+            - _design2: No padding with close button as absolute top-right
+        9. modalPosition - Position of the popup on the screen. Default value is "_center_center". Valid values are:
+            - _left_top: Top left corner
+            - _center_top: Top center
+            - _right_top: Top right corner
+            - _left_center: Center left
+            - _center_center: Center
+            - _right_center: Center right
+            - _left_bottom: Bottom left corner
+            - _center_bottom: Bottom center
+            - _right_bottom: Bottom right corner
+        10. background - Background color scheme. Default value is "_SEPTENARYBG".
+        11. showInDesign - Whether to show the popup in design mode. It is a boolean property.
+
+    The Popup component supports the following features:
+        - Customizable positioning on the screen
+        - Multiple design types
+        - Close button with configurable position
+        - Event handling for open and close
+        - Keyboard support (Escape key)
+        - Click outside to close
+        - Customizable title
+        - Backdrop overlay
+        - Support for child components
+        - Responsive design
+        - Accessibility features 

@@ -1,0 +1,61 @@
+22. Stepper is a component that creates a step-by-step progress indicator with customizable icons, images, and text. It is also can be called as a wizard component.
+
+    It has the following binding paths.
+
+        1. value - The current active step index.
+
+    It has the following sub-components.
+    
+        1. stepContainer - The container for all steps.
+        2. step - Individual step element.
+        3. stepIcon - Icon or image for the step.
+        4. stepText - Text label for the step.
+        5. stepLine - Connecting line between steps.
+
+    It has the following properties.
+
+        1. titles - Names of the steps. It is a multi-valued string property, translatable.
+        2. icons - Icons for each step. It is a multi-valued string property.
+        3. successIcon - Icon to show for completed steps. Default value is empty.
+        4. currentIcon - Icon to show for the current active step. Default value is empty.
+        5. nextIcon - Icon to show for upcoming steps. Default value is empty.
+        6. images - Images for each step. It is a multi-valued string property.
+        7. successImage - Image to show for completed steps. Default value is empty.
+        8. currentImage - Image to show for the current active step. Default value is empty.
+        9. nextImage - Image to show for upcoming steps. Default value is empty.
+        10. textPosition - Position of text relative to icon. Default value is "RIGHT". Valid values are:
+            - RIGHT: Text on the right
+            - LEFT: Text on the left
+            - TOP: Text on top
+            - BOTTOM: Text at bottom
+        11. countingType - Type of step counting when no icons are provided. Default value is "NUMBER". Valid values are:
+            - NUMBER: Numbers (1, 2, 3...)
+            - ROMAN: Lowercase Roman numerals (i, ii, iii...)
+            - ROMAN_UPPERCASE: Uppercase Roman numerals (I, II, III...)
+            - ALPHA_UPPERCASE: Uppercase alphabets (A, B, C...)
+            - ALPHA: Lowercase alphabets (a, b, c...)
+            - NONE: No counting
+        12. isStepperVertical - Whether to display steps vertically. It is a boolean property, default value is false.
+        13. moveToAnyPreviousStep - Whether to allow moving to any previous step. It is a boolean property, default value is false.
+        14. moveToAnyFutureStep - Whether to allow moving to any future step. It is a boolean property, default value is false.
+        15. showLines - Whether to show connecting lines between steps. It is a boolean property, default value is true.
+        16. stepperDesign - Design type of the stepper. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _big_circle: Big circle design
+            - _pills: Pill-shaped design
+            - _rectangle_arrow: Rectangle with arrow design
+        17. onClick - Event triggered when a step is clicked.
+        18. useActiveIconAlways - Whether to always use the active icon. It is a boolean property, default value is false.
+        19. useSuccessIconAlways - Whether to always use the success icon. It is a boolean property, default value is true.
+        20. useNextIconAlways - Whether to always use the next icon. It is a boolean property, default value is false.
+
+    The Stepper component supports the following features:
+        - Multiple step designs
+        - Custom icons and images for each step state
+        - Flexible text positioning
+        - Various counting styles
+        - Vertical and horizontal layouts
+        - Step navigation control
+        - Connecting lines between steps
+        - Responsive design
+        - Accessibility features 

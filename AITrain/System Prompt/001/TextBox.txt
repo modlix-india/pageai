@@ -1,0 +1,65 @@
+33. TextBox is a component that creates a rich text input field with formatting capabilities and various styling options.
+
+    It has the following binding paths.
+
+        1. value - The text content of the text box.
+
+    It has the following sub-components.
+    
+        1. textBoxContainer - The container for the text box.
+        2. textBoxInput - The actual text input element.
+        3. textBoxToolbar - The formatting toolbar.
+        4. textBoxLabel - The label for the text box.
+        5. textBoxSupportingText - Helper text below the text box.
+
+    It has the following properties.
+
+        1. label - Label for the text box. It is a string property, translatable.
+        2. noFloat - Whether to disable floating label. It is a boolean property, default value is false.
+        3. showMandatoryAsterisk - Whether to show mandatory asterisk. It is a boolean property, default value is false.
+        4. placeholder - Placeholder text in the text box. Default value is empty string.
+        5. defaultValue - Default value when the text box is empty.
+        6. supportingText - Helper text to assist users. It is a string property, translatable.
+        7. readOnly - Whether the text box is read-only. It is a boolean property.
+        8. validation - Validation rules for the text box. It is a multi-valued property.
+        9. maxLength - Maximum number of characters allowed. It is a numeric property.
+        10. showToolbar - Whether to show the formatting toolbar. It is a boolean property, default value is true.
+        11. toolbarOptions - Options to show in the toolbar. It is a multi-valued property. Valid values are:
+            - bold: Bold text
+            - italic: Italic text
+            - underline: Underlined text
+            - strikethrough: Strikethrough text
+            - bulletList: Bullet list
+            - numberedList: Numbered list
+            - link: Add link
+            - image: Add image
+            - code: Code block
+            - quote: Block quote
+        12. designType - Design type of the text box. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _outlined: Outline text box
+            - _filled: Filled text box
+            - _custom: Custom design
+        13. colorScheme - Color scheme for the text box. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        14. onChange - Event triggered when the value changes.
+        15. onBlur - Event triggered when the text box loses focus.
+        16. onFocus - Event triggered when the text box gains focus.
+
+    The TextBox component supports the following features:
+        - Rich text formatting
+        - Formatting toolbar
+        - Multiple design types
+        - Color schemes
+        - Character limit
+        - Input validation
+        - Supporting text
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Form integration
+        - Keyboard shortcuts 

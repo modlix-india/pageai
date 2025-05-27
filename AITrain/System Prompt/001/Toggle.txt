@@ -1,0 +1,55 @@
+29. Toggle is a component that creates a switch/toggle button for boolean input with various styling options.
+
+    It has the following binding paths.
+
+        1. value - The current state of the toggle (true/false).
+
+    It has the following sub-components.
+    
+        1. toggleContainer - The container for the toggle.
+        2. toggleTrack - The track/rail of the toggle.
+        3. toggleThumb - The draggable thumb/knob of the toggle.
+        4. toggleLabel - The label for the toggle.
+
+    It has the following properties.
+
+        1. label - Label for the toggle. It is a string property, translatable.
+        2. labelPosition - Position of the label. Default value is "right". Valid values are:
+            - left: Label on the left
+            - right: Label on the right
+            - top: Label on top
+            - bottom: Label at bottom
+        3. defaultChecked - Whether the toggle is checked by default. It is a boolean property, default value is false.
+        4. disabled - Whether the toggle is disabled. It is a boolean property, default value is false.
+        5. readOnly - Whether the toggle is read-only. It is a boolean property, default value is false.
+        6. designType - Design type of the toggle. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _ios: iOS style
+            - _android: Android style
+            - _material: Material Design style
+            - _custom: Custom design
+        7. size - Size of the toggle. Default value is "medium". Valid values are:
+            - small: Small size
+            - medium: Medium size
+            - large: Large size
+        8. colorScheme - Color scheme for the toggle. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        9. onChange - Event triggered when the toggle state changes.
+        10. onFocus - Event triggered when the toggle gains focus.
+        11. onBlur - Event triggered when the toggle loses focus.
+
+    The Toggle component supports the following features:
+        - Multiple design types (iOS, Android, Material)
+        - Customizable sizes
+        - Label positioning
+        - Color schemes
+        - Disabled and read-only states
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Form integration
+        - Keyboard navigation 

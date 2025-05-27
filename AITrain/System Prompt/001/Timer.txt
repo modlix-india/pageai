@@ -1,0 +1,55 @@
+28. Timer is a component that creates a countdown or count-up timer with no runtime ui. But triggers an event on time.
+
+    It has the following binding paths.
+
+        1. value - The current time value of the timer.
+
+    It has the following sub-components.
+    
+        1. timerContainer - The container for the timer.
+        2. timerDisplay - The display showing the time.
+        3. timerControls - The controls for the timer (start, pause, reset).
+        4. timerLabel - The label for the timer.
+
+    It has the following properties.
+
+        1. label - Label for the timer. It is a string property, translatable.
+        2. timerType - Type of timer. Default value is "countdown". Valid values are:
+            - countdown: Count down from a set time
+            - countup: Count up from zero
+        3. initialTime - Initial time in seconds. Default value is 0.
+        4. endTime - End time in seconds for countdown. Default value is 0.
+        5. displayFormat - Format to display the time. Default value is "HH:mm:ss". Valid values are:
+            - HH:mm:ss: Hours, minutes, seconds
+            - mm:ss: Minutes, seconds
+            - ss: Seconds only
+        6. showControls - Whether to show timer controls. It is a boolean property, default value is true.
+        7. autoStart - Whether to start the timer automatically. It is a boolean property, default value is false.
+        8. loop - Whether to loop the timer. It is a boolean property, default value is false.
+        9. onComplete - Event triggered when the timer completes.
+        10. onTick - Event triggered on each timer tick.
+        11. onStart - Event triggered when the timer starts.
+        12. onPause - Event triggered when the timer pauses.
+        13. onReset - Event triggered when the timer resets.
+        14. designType - Design type of the timer. Valid values include:
+            - _default: Default design
+            - _digital: Digital clock design
+            - _analog: Analog clock design
+        15. colorScheme - Color scheme for the timer. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+
+    The Timer component supports the following features:
+        - Countdown and count-up modes
+        - Multiple time display formats
+        - Timer controls (start, pause, reset)
+        - Auto-start option
+        - Loop functionality
+        - Event handling
+        - Multiple design types
+        - Color schemes
+        - Responsive design
+        - Accessibility features 

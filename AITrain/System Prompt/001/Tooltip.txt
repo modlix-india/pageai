@@ -1,0 +1,49 @@
+30. Tooltip is a component that creates a floating label that appears when hovering over or focusing on an element.
+
+    It has the following sub-components.
+    
+        1. tooltipContainer - The container for the tooltip.
+        2. tooltipContent - The content of the tooltip.
+        3. tooltipArrow - The arrow pointing to the target element.
+
+    It has the following properties.
+
+        1. content - Content to display in the tooltip. It is a string property, translatable.
+        2. position - Position of the tooltip relative to the target. Default value is "top". Valid values are:
+            - top: Above the target
+            - bottom: Below the target
+            - left: Left of the target
+            - right: Right of the target
+        3. showDelay - Delay in milliseconds before showing the tooltip. Default value is 0.
+        4. hideDelay - Delay in milliseconds before hiding the tooltip. Default value is 0.
+        5. showOnHover - Whether to show the tooltip on hover. It is a boolean property, default value is true.
+        6. showOnFocus - Whether to show the tooltip on focus. It is a boolean property, default value is true.
+        7. showArrow - Whether to show the arrow pointing to the target. It is a boolean property, default value is true.
+        8. maxWidth - Maximum width of the tooltip in pixels. Default value is 200.
+        9. designType - Design type of the tooltip. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _light: Light theme
+            - _dark: Dark theme
+            - _custom: Custom design
+        10. colorScheme - Color scheme for the tooltip. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        11. onShow - Event triggered when the tooltip is shown.
+        12. onHide - Event triggered when the tooltip is hidden.
+
+    The Tooltip component supports the following features:
+        - Multiple positioning options
+        - Show/hide delays
+        - Hover and focus triggers
+        - Arrow indicator
+        - Maximum width control
+        - Multiple design types
+        - Color schemes
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Rich text content
+        - Custom styling 

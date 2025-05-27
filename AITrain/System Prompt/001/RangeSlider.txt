@@ -1,0 +1,83 @@
+20. RangeSlider is a component that creates a slider input for selecting a range of values.
+
+    It has the following binding paths.
+
+        1. value - The current value(s) of the range slider.
+
+    It has the following sub-components.
+    
+        1. track - The slider track/rail.
+        2. thumb - The draggable handle(s) on the track.
+        3. tooltip - The tooltip showing the current value.
+        4. minLabel - The label for minimum value.
+        5. maxLabel - The label for maximum value.
+
+    It has the following properties.
+
+        1. trackDesign - Design of the slider track. Default value is "_mediumTrack". Valid values are:
+            - _thinTrack: Thin track
+            - _mediumTrack: Medium track
+            - _thickTrack: Thick track
+        2. trackColor - Color style of the track. Default value is "_filledTrack". Valid values are:
+            - _filledTrack: Filled track
+            - _emptyTrack: Empty track
+            - _noneTrack: No track
+        3. rangeThumbDesign - Design of the slider thumb. Default value is "_roundThumb". Valid values are:
+            - _roundThumb: Round thumb
+            - _pillThumb: Pill-shaped thumb
+            - _roundedThumbSquare: Rounded square thumb
+        4. rangeThumbSize - Size of the slider thumb. Default value is "_mediumThumb". Valid values are:
+            - _smallThumb: Small thumb
+            - _mediumThumb: Medium thumb
+            - _largeThumb: Large thumb
+        5. rangeThumbPitDesign - Design of the thumb pit. Default value is "_directThumb". Valid values are:
+            - _directThumb: With pit
+            - _noPit: Without pit
+            - _invertThumb: Inverted pit
+        6. toolTipDesign - Design of the tooltip. Default value is "_roundedTT". Valid values are:
+            - _roundedTT: Rounded tooltip
+            - _roundedRectangleTT: Rounded rectangle tooltip
+            - _largeRoundedTT: Large rounded tooltip
+            - _labelTT: Label tooltip
+            - _fixedLabelTT: Fixed label tooltip
+        7. fillType - Track filling mode. Default value is "fromStart". Valid values are:
+            - fromStart: Fill from start
+            - betweenSliders: Fill between sliders
+        8. sliderCrossing - Whether sliders can cross each other. It is a boolean property, default value is true.
+        9. colorScheme - Color scheme for the slider. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        10. storageDataType - Data type to store the value. Default value is "value". Valid values are:
+            - value: Store actual value
+            - percent: Store percentage
+        11. min - Minimum value of the slider. Default value is 0.
+        12. max - Maximum value of the slider. Default value is 100.
+        13. minLabelDisplay - Display type for minimum label. Default value is "value". Valid values are:
+            - none: No label
+            - value: Show value
+            - percent: Show percentage
+        14. maxLabelDisplay - Display type for maximum label. Default value is "value". Valid values are:
+            - none: No label
+            - value: Show value
+            - percent: Show percentage
+        15. minLabelPosition - Position of minimum label. Default value is "top". Valid values are:
+            - top: Above the slider
+            - bottom: Below the slider
+        16. maxLabelPosition - Position of maximum label. Default value is "top". Valid values are:
+            - top: Above the slider
+            - bottom: Below the slider
+
+    The RangeSlider component supports the following features:
+        - Single or range selection
+        - Customizable track and thumb designs
+        - Value tooltips
+        - Min/max labels with customizable display
+        - Percentage or value-based storage
+        - Multiple color schemes
+        - Responsive design
+        - Accessibility features
+        - Keyboard navigation
+        - Touch and mouse support 

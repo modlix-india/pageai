@@ -1,0 +1,62 @@
+23. Tabs is a component that creates a tabbed interface for organizing content into multiple sections.
+
+    It has the following binding paths.
+
+        1. value - The currently active tab index.
+
+    It has the following sub-components.
+    
+        1. tabsContainer - The container for all tabs.
+        2. tabList - The list of tab headers.
+        3. tab - Individual tab header.
+        4. tabPanel - The content panel for each tab.
+        5. tabIndicator - The indicator showing the active tab.
+
+    It has the following properties.
+
+        1. tabs - Array of tab objects with label and content. It is a multi-valued property.
+        2. orientation - Orientation of the tabs. Default value is "horizontal". Valid values are:
+            - horizontal: Tabs arranged horizontally
+            - vertical: Tabs arranged vertically
+        3. tabPosition - Position of the tab headers. Default value is "top". Valid values are:
+            - top: Tabs at the top
+            - bottom: Tabs at the bottom
+            - left: Tabs on the left
+            - right: Tabs on the right
+        4. designType - Design type of the tabs. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _pills: Pill-shaped tabs
+            - _underline: Underlined tabs
+            - _enclosed: Enclosed tabs
+            - _custom: Custom design
+        5. colorScheme - Color scheme for the tabs. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        6. showIcons - Whether to show icons in tabs. It is a boolean property, default value is false.
+        7. iconPosition - Position of icons in tabs. Default value is "left". Valid values are:
+            - left: Icon on the left
+            - right: Icon on the right
+            - top: Icon on top
+            - bottom: Icon at bottom
+        8. scrollable - Whether tabs should be scrollable. It is a boolean property, default value is false.
+        9. centered - Whether to center the tabs. It is a boolean property, default value is false.
+        10. fullWidth - Whether tabs should take full width. It is a boolean property, default value is false.
+        11. onChange - Event triggered when a tab is changed.
+        12. onClose - Event triggered when a tab is closed (if closable).
+
+    The Tabs component supports the following features:
+        - Horizontal and vertical orientations
+        - Multiple tab positions
+        - Various design types
+        - Icon support with positioning
+        - Scrollable tabs
+        - Centered and full-width layouts
+        - Color schemes
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Dynamic tab management
+        - Closable tabs 

@@ -1,0 +1,29 @@
+13. Link is a link component that creates clickable links with various styling options.
+
+    It does not have any binding paths.
+
+    It has the following sub-components.
+    
+        1. externalIcon - Icon component that appears when showButton is enabled.
+
+    It has the following pseudo states.
+
+        1. hover - When the link is hovered.
+        2. visited - When the link has been visited.
+
+    It has the following properties.
+
+        1. label - Link's display label. This is translatable.
+        2. linkPath - Path to navigate when clicked like href of a tag.
+        3. linkTargetType - Target type of the link like _blank, _self, etc.
+        4. linkTargetFeatures - Features for the target window when opened.
+        5. showButton - Button beside the link to redirect. It is a boolean property.
+        6. externalButtonTarget - Link Button's target.
+        7. externalButtonFeatures - Link Button's target features.
+        8. designType - Following are the valid values for this property - "_default", "_outlined", "_text", "_iconButton", "_iconPrimaryButton", "_fabButton", "_fabButtonMini", "_decorative", "_bigDesign1", "_underLine", "_underAboveLine", "_sideLines". Default value is "_default". The Link component supports additional design types beyond the standard button designs:
+            - _underLine: Underline type link
+            - _underAboveLine: Line Above Below type link
+            - _sideLines: Side Lines type link
+        9. showLines - Show Lines not only on hover. It is a boolean property.
+        10. colorScheme - Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".
+        11. onClick - Event to be triggered when clicked. 

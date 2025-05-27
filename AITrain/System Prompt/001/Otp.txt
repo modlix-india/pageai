@@ -1,0 +1,40 @@
+15. OTP is a one-time password input component that creates a series of input boxes for entering verification codes.
+
+    It has the following binding paths.
+
+        1. value - The current value of the OTP input.
+
+    It has the following sub-components.
+    
+        1. inputBox - The individual input box for each OTP digit.
+        2. activeInputBox - The currently focused input box.
+        3. supportText - Text displayed to help users fill the OTP.
+        4. errorText - Text displayed when validation fails.
+        5. errorTextContainer - Container for error messages.
+
+    It has the following pseudo states.
+
+        1. focus - When any input box is focused.
+        2. readOnly - When the OTP input is in read-only mode.
+
+    It has the following properties.
+
+        1. autoFocus - OTP to be focused automatically when page loads. It is a boolean property, default value is false.
+        2. maskValue - Mask the value of the OTP. It is a boolean property, default value is false.
+        3. maskStyle - Style of the mask character. Default value is "DOT". Valid values are:
+            - DOT: Mask with dot (•)
+            - ASTERISK: Mask with asterisk (*)
+        4. readOnly - Read only property of the OTP. If true, the OTP will be disabled.
+        5. validation - Validation rules for the OTP input. Supports MANDATORY validation.
+        6. supportingText - Text to be shown to help fill the OTP. This is translatable.
+        7. otpLength - Length of OTP. Default value is 4.
+        8. valueType - The type of values allowed in the OTP. Default value is "NUMERIC". Valid values are:
+            - NUMERIC: Only number values allowed
+            - ALPHABETICAL: Only alphabet values allowed
+            - ALPHANUMERIC: Both alphabet and number values allowed
+            - ANY: Any values allowed
+        9. designType - Following are the valid values for this property - "_default", "_outlined", "_text", "_iconButton", "_iconPrimaryButton", "_fabButton", "_fabButtonMini", "_decorative", "_bigDesign1", "_dashed", "_round", "_filled". Default value is "_default". The OTP component supports additional design types:
+            - _dashed: Dashed OTP type
+            - _round: Round OTP type
+            - _filled: Filled OTP type
+        10. colorScheme - Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE".

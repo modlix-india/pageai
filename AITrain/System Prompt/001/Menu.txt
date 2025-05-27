@@ -1,0 +1,49 @@
+14. Menu is a menu component that creates hierarchical navigation menus with various styling options and submenu support.
+
+    It does not have any binding paths.
+
+    It has the following sub-components.
+    
+        1. externalIcon - Icon component that appears when showButton is enabled.
+        2. icon - Icon component to be displayed on the left side of the menu item.
+        3. imageIcon - Image component to be displayed on the left side of the menu item.
+        4. activeImageIcon - Image component to be displayed on the left side when the menu is active.
+        5. caretIcon - Icon component that indicates if a menu item has submenus and their state (open/closed).
+        6. subMenuContainer - Container for submenu items.
+
+    It has the following pseudo states.
+
+        1. hover - When the menu item is hovered.
+        2. visited - When the menu item has been visited.
+        3. active - When the menu item is active based on the current path.
+
+    It has the following properties.
+
+        1. label - Menu item's display label. This is translatable.
+        2. linkPath - Path to navigate when clicked like href of a tag.
+        3. linkTargetType - Target type of the link like _blank, _self, etc.
+        4. linkTargetFeatures - Features for the target window when opened.
+        5. showButton - Button beside the menu item to redirect. It is a boolean property.
+        6. externalButtonTarget - Link Button's target. Default value is "_blank".
+        7. externalButtonFeatures - Link Button's target features.
+        8. imageIcon - Menu's image icon to be displayed on left.
+        9. activeImageIcon - Menu's image icon to be displayed on left when active.
+        10. icon - Menu's icon to be displayed on left.
+        11. caretIconOpen - Menu's icon to be displayed when menu is open. Default value is "fa fa-solid fa-angle-down".
+        12. caretIconClose - Menu's icon to be displayed when menu is closed. Default value is "fa fa-solid fa-angle-down fa-rotate-180".
+        13. pathsActiveFor - A list of comma separated paths for which the menu is shown in active state.
+        14. onClick - Event to be triggered when clicked.
+        15. onMenuOpen - Menu's event to trigger on menu open click.
+        16. onMenuClose - Menu's event to trigger on menu close click.
+        17. onlyIconMenu - Menu have only icons. It is a boolean property.
+        18. isMenuOpen - Should sub menu if any be open or close on load by default. It is a boolean property, default value is true.
+        19. subMenuOrientation - SubMenu Orientation. Default value is "_default_orientation". Valid values are:
+            - _default_orientation: Default Orientation
+            - _right_orientation: Right Orientation
+            - _bottom_orientation: Bottom Orientation
+        20. designType - Following are the valid values for this property - "_default", "_outlined", "_text", "_iconButton", "_iconPrimaryButton", "_fabButton", "_fabButtonMini", "_decorative", "_bigDesign1", "_outlined", "_text", "_sides", "_topbottom". Default value is "_default". The Menu component supports additional design types:
+            - _outlined: Outline type menu
+            - _text: Text type menu
+            - _sides: Side Bordered Menu type
+            - _topbottom: Top and Bottom Bordered Menu type
+        21. colorScheme - Following are the valid values for this property - "_primary", "_secondary", "_tertiary", "_quaternary", "_quinary". Default value is "_primary". The colors for all the color schemes are predefined in themes. Values for color for each value is "#52BD94", "#08705C", "#FFC728", "#EC6B5F", "#4D7FEE". 

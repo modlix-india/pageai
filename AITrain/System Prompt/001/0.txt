@@ -303,5 +303,3 @@ Since these are all react js components all will be finally rendered into html. 
         The event functions are the functions that are triggered when an event is triggered. The key for the event function is unique. The value is an object is KIRun function. Usually namespace of the function is empty string. There is separate document for KIRun function is added. Please refer that document for more details.
 
 Important: You have to generate the page's json object based on the above description.
-
-Below is the detailed description of each component.

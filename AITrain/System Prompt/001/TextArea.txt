@@ -1,0 +1,64 @@
+25. TextArea is a component that creates a multi-line text input field with various formatting and validation options.
+
+    It has the following binding paths.
+
+        1. value - The text content of the textarea.
+
+    It has the following sub-components.
+    
+        1. textAreaContainer - The container for the textarea.
+        2. textAreaInput - The actual textarea input element.
+        3. label - The label for the textarea.
+        4. supportingText - Helper text below the textarea.
+        5. clearButton - Button to clear the textarea content.
+
+    It has the following properties.
+
+        1. label - Label for the textarea. It is a string property, translatable.
+        2. noFloat - Whether to disable floating label. It is a boolean property, default value is false.
+        3. showMandatoryAsterisk - Whether to show mandatory asterisk. It is a boolean property, default value is false.
+        4. hideClearButton - Whether to hide the clear button. It is a boolean property, default value is false.
+        5. autoComplete - Autocomplete type. Default value is "off". Valid values are:
+            - off: Autocomplete off
+            - on: Autocomplete on
+            - none: No autocomplete
+        6. autoFocus - Whether to focus the textarea automatically on page load. It is a boolean property, default value is false.
+        7. defaultValue - Default value when the textarea is empty.
+        8. supportingText - Helper text to assist users. It is a string property, translatable.
+        9. placeholder - Placeholder text in the textarea. Default value is empty string.
+        10. readOnly - Whether the textarea is read-only. It is a boolean property.
+        11. validation - Validation rules for the textarea. It is a multi-valued property.
+        12. emptyValue - Value to store when the textarea is empty. Default value is "UNDEFINED". Valid values are:
+            - UNDEFINED: JavaScript undefined value
+            - NULL: JavaScript null value
+            - ENMPTYSTRING: Empty string value
+            - ZERO: Zero number value (0)
+        13. messageDisplay - How validation messages are displayed. Default value is "_floatingMessages". Valid values are:
+            - _floatingMessages: Messages float below the input
+            - _fixedMessages: Messages in fixed height container
+            - _nonFixedMessages: Container grows with messages
+        14. removeKeyWhenEmpty - Whether to remove the key when the textarea is emptied. It is a boolean property.
+        15. updateStoreImmediately - Whether to update the store immediately after typing or on blur. It is a boolean property.
+        16. onChange - Event triggered when the value changes.
+        17. onBlur - Event triggered when the textarea loses focus.
+        18. onFocus - Event triggered when the textarea gains focus.
+        19. maxChars - Maximum number of characters allowed. It is a numeric property.
+        20. rows - Number of rows to display. It is a numeric property.
+        21. onClear - Event triggered when the clear button is pressed.
+        22. designType - Design type of the textarea. Valid values include:
+            - _outlined: Outline text area
+            - _filled: Filled text area
+
+    The TextArea component supports the following features:
+        - Multi-line text input
+        - Floating and static labels
+        - Autocomplete support
+        - Input validation
+        - Character limit
+        - Clear button
+        - Supporting text
+        - Multiple design types
+        - Responsive design
+        - Accessibility features
+        - Form integration
+        - Event handling 

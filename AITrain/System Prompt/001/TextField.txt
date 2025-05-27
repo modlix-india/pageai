@@ -1,0 +1,63 @@
+26. TextField is a component that creates a single-line text input field with various formatting and validation options.
+
+    It has the following binding paths.
+
+        1. value - The text content of the text field.
+
+    It has the following sub-components.
+    
+        1. textFieldContainer - The container for the text field.
+        2. textFieldInput - The actual text input element.
+        3. label - The label for the text field.
+        4. supportingText - Helper text below the text field.
+        5. leftIcon - Icon on the left side of the input.
+        6. rightIcon - Icon on the right side of the input.
+        7. clearButton - Button to clear the text field content.
+
+    It has the following properties.
+
+        1. label - Label for the text field. It is a string property, translatable.
+        2. noFloat - Whether to disable floating label. It is a boolean property, default value is false.
+        3. showMandatoryAsterisk - Whether to show mandatory asterisk. It is a boolean property, default value is false.
+        4. hideClearButton - Whether to hide the clear button. It is a boolean property, default value is false.
+        5. autoComplete - Autocomplete type. Default value is "off". Valid values are:
+            - off: Autocomplete off
+            - on: Autocomplete on
+            - none: No autocomplete
+        6. autoFocus - Whether to focus the text field automatically on page load. It is a boolean property, default value is false.
+        7. defaultValue - Default value when the text field is empty.
+        8. supportingText - Helper text to assist users. It is a string property, translatable.
+        9. leftIcon - Icon to show on the left side of the input.
+        10. rightIcon - Icon to show on the right side of the input.
+        11. isPassword - Whether the text field is for password input. It is a boolean property, default value is false.
+        12. placeholder - Placeholder text in the text field. Default value is empty string.
+        13. readOnly - Whether the text field is read-only. It is a boolean property.
+        14. validation - Validation rules for the text field. It is a multi-valued property.
+        15. removeKeyWhenEmpty - Whether to remove the key when the text field is emptied. It is a boolean property, default value is false.
+        16. updateStoreImmediately - Whether to update the store immediately after typing or on blur. It is a boolean property.
+        17. onChange - Event triggered when the value changes.
+        18. onBlur - Event triggered when the text field loses focus.
+        19. onFocus - Event triggered when the text field gains focus.
+        20. onEnter - Event triggered when Enter key is pressed.
+        21. onClear - Event triggered when the clear button is pressed.
+        22. maxChars - Maximum number of characters allowed. It is a numeric property.
+        23. designType - Design type of the text field. Valid values include:
+            - _outlined: Outline text field
+            - _filled: Filled text field
+            - _bigDesign1: Big design 1
+
+    The TextField component supports the following features:
+        - Single-line text input
+        - Floating and static labels
+        - Autocomplete support
+        - Input validation
+        - Character limit
+        - Clear button
+        - Supporting text
+        - Left and right icons
+        - Password input
+        - Multiple design types
+        - Responsive design
+        - Accessibility features
+        - Form integration
+        - Event handling 

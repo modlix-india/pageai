@@ -1,0 +1,39 @@
+18. Popover is a component that creates a floating content container that appears relative to a trigger element. It takes 
+two children one is to show the component that acts as a trigger for showing the second child in a popoverContainer.
+
+    It has the following sub-components.
+    
+        1. popoverParentContainer - The container that wraps the trigger element.
+        2. popoverContainer - The container for the popover content.
+
+    It has the following properties.
+
+        1. position - Position of the popover relative to the trigger element. Default value is "bottom-end". Valid values are:
+            - bottom: Bottom center
+            - bottom-start: Bottom start
+            - bottom-end: Bottom end
+            - top: Top center
+            - top-start: Top start
+            - top-end: Top end
+            - left: Left center
+            - left-start: Left start
+            - left-end: Left end
+            - right: Right center
+            - right-start: Right start
+            - right-end: Right end
+        2. showOnHover - Whether to show the popover on hover. It is a boolean property, default value is false.
+        3. showTip - Whether to show a tip/arrow on the popover. It is a boolean property, default value is false.
+        4. closeOnLeave - Whether to close the popover when mouse leaves. It is a boolean property, default value is false.
+        5. closeOnOutsideClick - Whether to close the popover when clicking outside. It is a boolean property, default value is true.
+        6. showInDesign - Whether to show the popover in design mode. It is a boolean property.
+        7. visibility - Controls the visibility of the popover. It is a boolean property.
+
+    The Popover component supports the following features:
+        - Multiple positioning options relative to trigger element
+        - Hover-based display
+        - Optional tip/arrow indicator
+        - Click outside to close
+        - Mouse leave behavior
+        - Support for child components
+        - Responsive design
+        - Accessibility features 

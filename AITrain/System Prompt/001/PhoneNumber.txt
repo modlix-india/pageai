@@ -1,0 +1,81 @@
+16. PhoneNumber is a component that creates a phone number input field with country code selection and formatting capabilities.
+
+    It has the following binding paths.
+
+        1. value - The current value of the phone number input.
+        2. countryCode - The selected country code.
+
+    It has the following sub-components.
+    
+        1. inputBox - The main input field for the phone number.
+        2. countrySelector - The dropdown for selecting country codes.
+        3. searchBox - The search input for filtering countries (when searchable).
+        4. supportText - Text displayed to help users fill the phone number.
+        5. errorText - Text displayed when validation fails.
+        6. errorTextContainer - Container for error messages.
+
+    It has the following pseudo states.
+
+        1. focus - When the input is focused.
+        2. readOnly - When the input is in read-only mode.
+        3. disabled - When the input is disabled.
+
+    It has the following properties.
+
+        1. label - Label for the phone number input. This is translatable.
+        2. placeholder - Placeholder text shown in the input box.
+        3. countries - List of countries to appear in the dropdown. Can select multiple countries.
+        4. topCountries - List of countries to appear at the top of the dropdown. Can select multiple countries.
+        5. orderBy - Order of dropdown options. Default value is "countryname". Valid values are:
+            - countryname: Sort by country name
+            - countrycode: Sort by country code
+            - dialcode: Sort by dial code
+        6. format - Whether to format the phone number. It is a boolean property, default value is true.
+        7. showMandatoryAsterisk - Whether to show an asterisk for mandatory fields. It is a boolean property, default value is false.
+        8. storeFormatted - Whether to store the formatted phone number. It is a boolean property, default value is false.
+        9. seperator - Type of separator for formatting. Default value is " " (space). Valid values are:
+            - Space: Use space as separator
+            - Hyphen: Use hyphen (-) as separator
+            - Dot: Use dot (.) as separator
+        10. isSearchable - Whether to allow searching in the country dropdown. It is a boolean property, default value is false.
+        11. searchLabel - Label for the search box in the dropdown. This is translatable.
+        12. clearSearchTextOnClose - Whether to clear search text when dropdown closes. It is a boolean property, default value is false.
+        13. noCodeForFirstCountry - Whether to not add dial code for the first country. It is a boolean property, default value is false.
+        14. noFloat - Whether to disable floating label. It is a boolean property, default value is false.
+        15. autoComplete - Autocomplete type for the input. Default value is "off". Valid values are:
+            - off: Autocomplete disabled
+            - on: Autocomplete enabled
+            - none: No autocomplete
+        16. supportingText - Text to help users fill the input. This is translatable.
+        17. autoFocus - Whether to focus the input automatically on page load. It is a boolean property, default value is false.
+        18. readOnly - Whether the input is read-only. It is a boolean property, default value is false.
+        19. validation - Validation rules for the input. Supports various validation types.
+        20. emptyValue - Value to store when input is empty. Default value is "UNDEFINED". Valid values are:
+            - UNDEFINED: Store undefined
+            - NULL: Store null
+            - ENMPTYSTRING: Store empty string
+            - ZERO: Store zero (0)
+        21. messageDisplay - How validation messages should be displayed. Default value is "_floatingMessages". Valid values are:
+            - _floatingMessages: Messages float below input
+            - _fixedMessages: Messages in fixed height container
+            - _nonFixedMessages: Container grows with messages
+        22. removeKeyWhenEmpty - Whether to remove the key when input is empty. It is a boolean property, default value is false.
+        23. designType - Design style of the input. Default value is "_default". Valid values include:
+            - _default: Default design
+            - _outlined: Outlined design
+            - _text: Text-only design
+            - _iconButton: Icon button design
+            - _iconPrimaryButton: Primary icon button design
+            - _fabButton: Floating action button design
+            - _fabButtonMini: Mini floating action button design
+            - _decorative: Decorative design
+            - _bigDesign1: Large design
+            - _dashed: Dashed design
+            - _round: Round design
+            - _filled: Filled design
+        24. colorScheme - Color scheme for the input. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme

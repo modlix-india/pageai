@@ -1,0 +1,61 @@
+34. Video is a component that creates a video player with various playback controls and styling options.
+
+    It has the following binding paths.
+
+        1. value - The current playback state of the video.
+
+    It has the following sub-components.
+    
+        1. videoContainer - The container for the video player.
+        2. videoElement - The actual video element.
+        3. videoControls - The playback controls.
+        4. videoProgress - The progress bar.
+        5. videoVolume - The volume control.
+        6. videoFullscreen - The fullscreen button.
+
+    It has the following properties.
+
+        1. src - Source URL of the video. It is a string property.
+        2. poster - Poster image URL to show before video plays. It is a string property.
+        3. autoplay - Whether to start playing automatically. It is a boolean property, default value is false.
+        4. loop - Whether to loop the video. It is a boolean property, default value is false.
+        5. muted - Whether the video is muted by default. It is a boolean property, default value is false.
+        6. controls - Whether to show video controls. It is a boolean property, default value is true.
+        7. preload - How the video should be preloaded. Default value is "auto". Valid values are:
+            - auto: Load the entire video
+            - metadata: Load only metadata
+            - none: Don't preload
+        8. width - Width of the video player. It is a numeric property.
+        9. height - Height of the video player. It is a numeric property.
+        10. designType - Design type of the video player. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _minimal: Minimal controls
+            - _modern: Modern design
+            - _custom: Custom design
+        11. colorScheme - Color scheme for the video player. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        12. onPlay - Event triggered when video starts playing.
+        13. onPause - Event triggered when video is paused.
+        14. onEnded - Event triggered when video ends.
+        15. onTimeUpdate - Event triggered during video playback.
+        16. onVolumeChange - Event triggered when volume changes.
+        17. onFullscreenChange - Event triggered when fullscreen state changes.
+
+    The Video component supports the following features:
+        - Multiple video sources
+        - Poster image support
+        - Autoplay and loop options
+        - Volume control
+        - Fullscreen support
+        - Progress tracking
+        - Multiple design types
+        - Color schemes
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Keyboard controls
+        - Touch gestures 

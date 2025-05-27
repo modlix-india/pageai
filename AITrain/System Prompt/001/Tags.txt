@@ -1,0 +1,58 @@
+24. Tags is a component that creates a collection of tags/labels with various styling and interaction options.
+
+    It has the following binding paths.
+
+        1. value - The array of selected tags.
+
+    It has the following sub-components.
+    
+        1. tagsContainer - The container for all tags.
+        2. tag - Individual tag element.
+        3. tagLabel - The label text of the tag.
+        4. tagIcon - The icon within the tag.
+        5. tagCloseButton - The close button for removable tags.
+
+    It has the following properties.
+
+        1. tags - Array of tag objects with label and value. It is a multi-valued property.
+        2. designType - Design type of the tags. Default value is "_default". Valid values are:
+            - _default: Default design
+            - _pills: Pill-shaped tags
+            - _chips: Material design chips
+            - _outlined: Outlined tags
+            - _custom: Custom design
+        3. colorScheme - Color scheme for the tags. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        4. size - Size of the tags. Default value is "medium". Valid values are:
+            - small: Small size
+            - medium: Medium size
+            - large: Large size
+        5. closable - Whether tags can be removed. It is a boolean property, default value is false.
+        6. selectable - Whether tags can be selected. It is a boolean property, default value is false.
+        7. multiSelect - Whether multiple tags can be selected. It is a boolean property, default value is false.
+        8. showIcons - Whether to show icons in tags. It is a boolean property, default value is false.
+        9. iconPosition - Position of icons in tags. Default value is "left". Valid values are:
+            - left: Icon on the left
+            - right: Icon on the right
+        10. maxTags - Maximum number of tags allowed. It is a numeric property.
+        11. onChange - Event triggered when tags are added or removed.
+        12. onSelect - Event triggered when a tag is selected.
+        13. onClose - Event triggered when a tag is closed.
+
+    The Tags component supports the following features:
+        - Multiple design types
+        - Color schemes
+        - Customizable sizes
+        - Removable tags
+        - Selectable tags
+        - Icon support
+        - Tag limit control
+        - Event handling
+        - Responsive design
+        - Accessibility features
+        - Dynamic tag management
+        - Keyboard navigation 

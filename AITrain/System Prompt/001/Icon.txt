@@ -1,0 +1,25 @@
+    10. Icon component is used to show icons from different libraries added to the application definition. The available icon libraries are free font awesome, material symbols outlined, material symbols rounded, material symbols sharp, material icons filled, material icons outlined, material icons rounded, material icons sharp, material icons two tone.
+
+    It cannot have any children.
+
+    It has no binding paths.
+
+    It does not have any pseudo states.
+
+    It does not have any sub-components.
+
+    It has the following properties.
+
+        1. icon - The name of the icon to be shown. This property is a string where the value is a bunch of space separated strings. Example: "fa fa-solid fa-icons _thinner _size1 _rotate-45 _flip-x" where all the string with _ are optional. For style choices are _thinner, _thins, _light, _regular, _medium, _semiBold, _bold, _extraBold. For size choices are _size1, _size2 so on up to _size8. For rotation choices are _rotate-45, _rotate-90 and so on upto _rotate-315 with intervals of 45 degrees. Then for flip you have _flip-x and _flip-y. We currently support font awesome free icons, material symbols and material icons based on which icon pack is added to the application definition. First two strings specifies the family of icons used "fa fa-solid" means font awesome solid icons, "fa fa-regular" font awesome regular icons, "ms material-symbols-outlined" material symbols outlined icons, "ms material-symbols-sharp" material symbols sharp, "ms material-symbols-rounded" material symbols rounded, "mi material-icons-two-tone" material icons two tone, "mi material-icons" material icons filled,  "mi material-icons-sharp" material icons sharp,  "mi material-icons-outlined" material icons outlined, and "mi material-icons-round" material icons rounded. Next string is the iconf name like "mio-admin_panel_settings", "fa-user" or "mio-settings_accessibility". The same rules apply everywhere an icon is used.
+
+        2. designType - This property determines the visual style of the icon. It can have the following values:
+            - _outlined - Displays the icon in an outlined style
+            - _filled - Displays the icon in a filled style
+            - _rounded - Displays the icon in a rounded style
+
+        3. colorScheme - This property determines the color scheme of the icon. It can have the following values:
+            - _defaultIcon - Uses the default color scheme for the icon
+            - _lightIcon - Uses a lighter color scheme for the icon
+            - Other common color scheme values inherited from the base component
+
+        4. visibility - This property controls whether the icon is visible or hidden in the UI. It can be used to conditionally show or hide the icon based on certain conditions.

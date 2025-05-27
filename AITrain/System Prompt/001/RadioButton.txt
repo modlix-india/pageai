@@ -1,0 +1,60 @@
+19. RadioButton is a component that creates a group of radio buttons or checkboxes for selection input.
+
+    It has the following binding paths.
+
+        1. value - The selected value(s) from the radio button group.
+
+    It has the following sub-components.
+    
+        1. label - The label text for each radio button.
+        2. checkbox - The radio button/checkbox input element.
+        3. thumb - The inner circle/dot of the radio button.
+
+    It has the following properties.
+
+        1. isMultiSelect - Whether to allow multiple selections. It is a boolean property, default value is false.
+        2. data - Data used to render radio buttons.
+        3. orientation - Layout orientation of radio buttons. Default value is "HORIZONATAL". Valid values are:
+            - HORIZONATAL: Arrange radio buttons horizontally
+            - VERTICAL: Arrange radio buttons vertically
+        4. designType - Design style of the radio buttons. Valid values include:
+            - _default: Default design
+            - _outlined: Outline radio button design
+            - _text: Text-only design
+            - _iconButton: Icon button design
+            - _iconPrimaryButton: Primary icon button design
+            - _fabButton: Floating action button design
+            - _fabButtonMini: Mini floating action button design
+            - _decorative: Decorative design
+            - _bigDesign1: Large design
+            - _dashed: Dashed design
+            - _round: Round design
+            - _filled: Filled design
+        5. colorScheme - Color scheme for the radio buttons. Default value is "_primary". Valid values are:
+            - _primary: Primary color scheme
+            - _secondary: Secondary color scheme
+            - _tertiary: Tertiary color scheme
+            - _quaternary: Quaternary color scheme
+            - _quinary: Quinary color scheme
+        6. layout - Layout configuration for the radio button group.
+        7. onClick - Event triggered when a radio button is clicked.
+        8. datatype - Data type of the selected value.
+        9. uniqueKeyType - Type of unique key for each option.
+        10. selectionType - Type of selection (single/multiple).
+        11. labelKeyType - Type of key used for labels.
+        12. selectionKey - Key used for selection value.
+        13. uniqueKey - Key used for unique identification.
+        14. labelKey - Key used for label text.
+        15. readOnly - Whether the radio buttons are read-only. It is a boolean property.
+        16. visibility - Controls the visibility of the radio button group. It is a boolean property.
+
+    The RadioButton component supports the following features:
+        - Single or multiple selection modes
+        - Horizontal or vertical orientation
+        - Multiple design types and color schemes
+        - Customizable labels and values
+        - Data binding
+        - Event handling
+        - Read-only mode
+        - Responsive design
+        - Accessibility features 

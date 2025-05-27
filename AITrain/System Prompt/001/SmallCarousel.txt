@@ -1,0 +1,70 @@
+21. SmallCarousel is a component that creates a slideshow/carousel for displaying content with navigation controls.
+
+    It has the following binding paths.
+
+        1. value - The current active slide index.
+
+    It has the following sub-components.
+    
+        1. slideContainer - The container for all slides.
+        2. slide - Individual slide content.
+        3. arrowButtons - Previous and next navigation buttons.
+        4. dotsContainer - Container for slide indicator dots.
+        5. dot - Individual slide indicator dot.
+
+    It has the following properties.
+
+        1. showArrowButtons - Whether to show previous and next arrow buttons. It is a boolean property, default value is true.
+        2. slideSpeed - Time between slides in milliseconds. Default value is 2000.
+        3. animationDuration - Duration of slide transition animation in milliseconds. Default value is 2000.
+        4. easing - Animation easing function. Default value is "ease". Valid values are:
+            - linear: Linear animation
+            - ease: Smooth animation
+            - ease-in: Slow start
+            - ease-out: Slow end
+            - ease-in-out: Slow start and end
+        5. autoPlay - Whether to automatically play slides. It is a boolean property, default value is true.
+        6. autoPlayDirection - Direction of auto-play. Default value is "forward". Valid values are:
+            - forward: Play slides forward
+            - backward: Play slides backward
+        7. dotsButtonType - Type of slide indicator dots. Default value is "circle". Valid values are:
+            - circle: Circular dots
+            - square: Square dots
+            - minus: Dash indicators
+            - none: No indicators
+        8. dotsButtonIconType - Style of dot indicators. Default value is "regular". Valid values are:
+            - regular: Hollow icons
+            - solid: Solid icons
+        9. showSlideNumbersInDots - Whether to show slide numbers in dots. It is a boolean property, default value is false.
+        10. slideNavButtonPlacement - Placement of navigation buttons. Default value is "_insideNavButton". Valid values are:
+            - _insideNavButton: Inside the carousel
+            - _outsideNavButton: Outside the carousel
+        11. slideNavButtonVerticalAlignment - Vertical alignment of navigation buttons. Default value is "_bottomNavButton". Valid values are:
+            - _topNavButton: Top alignment
+            - _bottomNavButton: Bottom alignment
+        12. slideNavButtonHorizontalAlignment - Horizontal alignment of navigation buttons. Default value is "_middleNavigation". Valid values are:
+            - _rightNavigation: Right alignment
+            - _middleNavigation: Middle alignment
+            - _leftNavigation: Left alignment
+        13. arrowButtonsPlacement - Placement of arrow buttons. Default value is "_insideArrow". Valid values are:
+            - _insideArrow: Inside the carousel
+            - _outsideArrow: Outside the carousel
+        14. arrowButtonsVerticalPlacement - Vertical placement of arrow buttons. Default value is "_centerArrow". Valid values are:
+            - _topArrow: Top placement
+            - _centerArrow: Center placement
+            - _bottomArrow: Bottom placement
+        15. arrowButtonsHorizontalPlacement - Horizontal placement of arrow buttons. Default value is "_middleArrow". Valid values are:
+            - _leftArrow: Left placement
+            - _middleArrow: Middle placement
+            - _rightArrow: Right placement
+
+    The SmallCarousel component supports the following features:
+        - Automatic and manual navigation
+        - Customizable slide transitions
+        - Multiple navigation controls (arrows and dots)
+        - Flexible button placement options
+        - Slide indicators with different styles
+        - Responsive design
+        - Touch and mouse support
+        - Keyboard navigation
+        - Accessibility features 

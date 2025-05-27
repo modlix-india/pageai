@@ -1,0 +1,28 @@
+12. Image is an image component that displays images with responsive behavior and multiple features.
+
+    It does not have any binding paths.
+
+    It has the following sub-components.
+    
+        1. image - The main image element that can be styled and customized.
+
+    It has the following pseudo states.
+
+        1. hover - When the image is hovered.
+
+    It has the following properties.
+
+        1. src - Default image source.
+        2. src2 - Image source for Tablet landscape screen.
+        3. src3 - Image source for Tablet portrait screen.
+        4. src4 - Image source for Mobile landscape screen.
+        5. src5 - Image source for Mobile portrait screen.
+        6. alt - Text describing the image. Default value is empty string.
+        7. zoom - Toggle zoom functionality. It is a boolean property, default value is false. (Not implemented)
+        8. zoomedImg - High quality image for zoom functionality. (Not implemented)
+        9. fallBackImg - Fallback image that will be displayed when the main image is broken.
+        10. imgLazyLoading - Image lazy loading. It is a boolean property, default value is false.
+        11. onClick - Event to be triggered when clicked.
+        12. stopPropagation - Stop propagation of click event which will not trigger the container click event. It is a boolean property, default value is false.
+        13. preventDefault - Prevent default of click event. It is a boolean property, default value is false.
+        14. useObjectToRender - Use Object to render (SVG only). It is a boolean property, default value is false.
